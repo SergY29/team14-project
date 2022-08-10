@@ -1,8 +1,76 @@
-<header>
+<header class="header">
   <div class="container">
-    header
-    <nav>nav</nav>
+    <nav class="header__nav">
+      <a href="#" class="logo">
+        <img src="../image/Logo@2x.png" alt="Logo" width="199" height="50">
+      </a>
+
+      
+        <button class="header__burger" type="button" title="Title" data-mobile-menu-open>
+          <svg width="20" height="12">
+            <use href="/Icons/Icons.svg#icon-Burger"></use>
+          </svg>
+        </button>
+    </nav>
+
+    <div class="overlay" data-mobile-menu>
+      <div class="header__mobile__menu">
+        <div class="mobile__menu--close-btn">
+          <button class="header__burger close" type="button" title="Title"  data-mobile-menu-close>
+            <svg width="14" height="14">
+              <use href="/Icons/Icons.svg#close-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile__menu--buy-wrap">
+          <button class="mobile__menu--buy-btn" type="button">Buy now
+            <svg class="mobile__menu--buy--arrow" width="6" height="8">
+              <use href="/Icons/Icons.svg#icon-buy-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <ul>
+          <hr noshade>
+          <li class="mobile__menu__item"><a href="#">Home</a></li>
+          <hr noshade>
+          <li class="mobile__menu__item"><a href="#">About us</a></li>
+          <hr noshade>
+          <li class="mobile__menu__item"><a href="#">How it’s made?</a></li>
+          <hr noshade>
+          <li class="mobile__menu__item"><a href="#">Our products</a></li>
+          <hr noshade>
+          <li class="mobile__menu__item"><a href="#">Contact</a></li>
+          <hr noshade>
+        </ul>
+      </div>
+    </div>
   </div>
 </header>
 
-<section class="hero">Hero</section>
+<section class="hero">
+  <div class="container">
+    <div class="header__hero">
+      <div class="header__title__wrap">
+        <h1 class="header__title">ice cream made with <span class="header__title__word">passion</span></h1>
+        <ul class="header__title--button">
+          <li>
+            <button class="header__title__button" type="button"><a href="">Products</a></button>
+          </li>
+          <li>
+            <button class="header__title__button" type="button"><a href="">How it’s made?</a></button>
+          </li>
+        </ul>
+      </div>
+    
+      <div class="header__ice-cream">
+    
+        <img class="header__circle" src="/image/Ellipse 3@2x.png" alt="Circle" width="290" height="344">
+    
+    
+        <img class="header__ice-cream-pic" src="/image/header-ice-cream@2x.png" alt="header-ice-cream" width="172"
+          height="410">
+      </div>
+    
+    </div>
+  </div>
+</section>

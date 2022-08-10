@@ -1,0 +1,317 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@font-face {
+  font-family: "DM Sans";
+  src: local("DM Sans"), url("/fonts/DMSans-Medium.woff2") format("woff2"), url("/fonts/DMSans-Medium.woff") format("woff"), url("/fonts/DMSans-Medium.ttf") format("truetype"), url("/fonts/DMSans-Medium.svg#DMSans-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: local("DM Sans"), url("/fonts/DMSans-Bold.woff2") format("woff2"), url("/fonts/DMSans-Bold.woff") format("woff"), url("/fonts/DMSans-Bold.ttf") format("truetype"), url("/fonts/DMSans-Bold.svg#DMSans-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DM Sans";
+  src: local("DM Sans"), url("/fonts/DMSans-Regular.woff2") format("woff2"), url("/fonts/DMSans-Regular.woff") format("woff"), url("/fonts/DMSans-Regular.ttf") format("truetype"), url("/fonts/DMSans-Regular.svg#DMSans-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Titan One";
+  src: local("Titan One"), url("/fonts/TitanOne.woff2") format("woff2"), url("/fonts/TitanOne.woff") format("woff"), url("/fonts/TitanOne.ttf") format("truetype"), url("/fonts/TitanOne.svg#TitanOne") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --primary-font-family: "DM Sans";
+  --alternative-font-family: "Titan One";
+  --accent-text-color: #d41443;
+  --dominant-text-color: #ffffff;
+  --alternative-text-color: #907e82;
+  --usual-text-color: #000000;
+  --accent-backgroung-color: #ffb8ca;
+  --title-accent-color: #ffa5ba;
+  --slider-color: #d31342;
+  --inactive-slider-color: #d9d9d9;
+  --agency-color: #f0d1a5;
+  --alternative-agency-color: #c2e297;
+  --quotes-color: #e1e1e1;
+  --point-review-color: #c7133e;
+  --sosials-inactive-color: #fea5bb;
+}
+
+body {
+  margin: 0;
+  font-family: var(--primary-font-family), Verdana, Tahoma, arial, sans-serif;
+  font-weight: 400;
+  background-color: var(--dominant-text-color);
+  color: var(--usual-text-color);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container {
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.header {
+  background-color: var(--accent-backgroung-color);
+  padding-top: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__burger {
+  border: none;
+  background-color: var(--accent-backgroung-color);
+}
+
+.header__hero {
+  display: flex;
+}
+
+.header__title {
+  width: 218px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--dominant-text-color);
+}
+
+.header__title__word {
+  font-size: 48px;
+  line-height: 0.95;
+  color: var(--accent-text-color);
+}
+
+.header__title--button {
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.header__title__button:first-child {
+  margin-right: 8px;
+}
+
+.header__title__button {
+  background-color: var(--accent-text-color);
+  height: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  color: var(--dominant-text-color);
+  border: none;
+  border-radius: 20px;
+}
+
+.header__title__button:hover {
+  background-color: var(--dominant-text-color);
+  color: var(--accent-text-color);
+}
+
+.header__ice-cream {
+  margin-top: 34px;
+  margin-left: auto;
+}
+
+.header__title__wrap {
+  position: absolute;
+  margin-top: 136px;
+  z-index: 10;
+}
+
+.header__circle {
+  right: 0px;
+  position: absolute;
+  top: 82px;
+}
+
+.header__ice-cream-pic {
+  position: relative;
+  margin-right: 20px;
+}
+
+hr:first-child {
+  margin-top: 0px;
+}
+
+hr {
+  border-color: #e18298;
+  margin: 12px 0px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background: rgba(227, 129, 236, 0.3);
+  z-index: 30;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 200ms linear;
+}
+
+.overlay.overlay.is-hidden {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.close {
+  background-color: #e17992;
+  margin-right: 20px;
+  padding: 6px;
+}
+
+.overlay.is-hidden .header__mobile__menu {
+  transform: translate(-100%, 0%);
+}
+
+.header__mobile__menu {
+  position: absolute;
+  top: 0%;
+  left: 100%;
+  width: 250px;
+  height: 504px;
+  background-color: #e17992;
+  z-index: 9999;
+  transition: transform 250ms linear 250ms;
+}
+
+.mobile__menu--close-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.mobile__menu--buy-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile__menu--buy-btn {
+  position: relative;
+  width: 209px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  margin-top: 26px;
+  margin-bottom: 20px;
+  color: var(--accent-text-color);
+}
+
+.mobile__menu--buy--arrow {
+  position: absolute;
+  right: 38px;
+  top: 19px;
+}
+
+.mobile__menu__item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--dominant-text-color);
+  margin-left: 20px;
+}
+
+.mobile__menu__item:hover {
+  color: var(--accent-text-color);
+}
+
+.hero {
+  background: var(--accent-backgroung-color);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */
