@@ -17,7 +17,7 @@
         url('/fonts/DMSans-Bold.woff') format('woff'),
         url('/fonts/DMSans-Bold.ttf') format('truetype'),
         url('/fonts/DMSans-Bold.svg#DMSans-Bold') format('svg');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
@@ -29,7 +29,7 @@
         url('/fonts/DMSans-Regular.woff') format('woff'),
         url('/fonts/DMSans-Regular.ttf') format('truetype'),
         url('/fonts/DMSans-Regular.svg#DMSans-Regular') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -41,7 +41,25 @@
         url('/fonts/TitanOne.woff') format('woff'),
         url('/fonts/TitanOne.ttf') format('truetype'),
         url('/fonts/TitanOne.svg#TitanOne') format('svg');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
+}
+
+:root {
+    --primary-font-family: "DM Sans";
+    --alternative-font-family: "Titan One"
+    --accent-text-color: #D41443;
+    --dominant-text-color: #FFFFFF;
+    --alternative-text-color: #907E82;
+    --usual-text-color: #000000;
+    --accent-backgroung-color: #FFB8CA;
+    --title-accent-color: #FFA5BA;
+    --slider-color: #D31342;
+    --inactive-slider-color: #D9D9D9;
+    --agency-color: #F0D1A5;
+    --alternative-agency-color: #C2E297;
+    --quotes-color: #E1E1E1;
+    --point-review-color: #C7133E;
+    --sosials-inactive-color: #FEA5BB;
 }

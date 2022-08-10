@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: var(--primary-font-family), Verdana, Tahoma, arial, sans-serif;
+    font-weight: 400;
+    background-color: var(--dominant-text-color);
+    color: var(--usual-text-color);
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+button {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+
+}

@@ -1,5 +1,7 @@
 @import './utils/variables';
-@import './common';
+@import './base/common';
+@import './base/base';
+@import './utils/resets';
 @import './utils/hidden';
 
 @import './components/section';
