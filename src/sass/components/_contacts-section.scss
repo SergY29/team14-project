@@ -1,14 +1,14 @@
- .contacts__header {
+.contacts__name {
     font-size: 0;
 }
-.contacts__content {
+.content {
     display: flex;
     justify-content: space-between;
-    background-color:#FFF5F6;
+    background-color: var(--fon);
     //flex-wrap:wrap; mob
 }
 
- .contacts__block {    
+.content__name {    
     display: flex;
     flex-direction: column;
     background-color: var(--dominant-text-color);
@@ -40,4 +40,11 @@
     }
 }
 
-
+.content__place {
+    font-family:DM Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
