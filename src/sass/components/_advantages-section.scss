@@ -1,5 +1,6 @@
 .section__advantages {
     padding-top: 0;
+    margin-top: 2000px;
     background-color: var(--backgroung-color);
 }
 
@@ -88,7 +89,8 @@
     }
 }
 
-.advantages__quantity {
+.advantages__quantity,
+.advantages__quantity--unit {
     font-family: var(--alternative-font-family);
     font-size: 36px;
     line-height: 1.14;
@@ -99,14 +101,20 @@
     color: var(--accent-text-color);
 }
 
+.advantages__quantity {
+    display: inline-block;
+}
+
 @media screen and (max-width: 768px) {
-    .advantages__quantity {
+    .advantages__quantity,
+    .advantages__quantity--unit {
         font-size: 48px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    .advantages__quantity {
+    .advantages__quantity,
+    .advantages__quantity--unit {
         font-size: 58px;
     }
 }
