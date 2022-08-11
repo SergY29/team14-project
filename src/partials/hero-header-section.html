@@ -1,54 +1,65 @@
 <header class="header">
   <div class="container">
-    <nav class="header__nav">
-
+    <nav class="site-nav">
       <a href="#" class="logo">
         <picture>
-          <source srcset="/image/Logo_199.png 1x, /image/Logo_398.png 2x"/>
-          <img src="/image/Logo_199.png" alt="Logo" width="199" height="50">
+          <source
+            srcset="/image/Logo_199.png 1x, /image/Logo_398.png 2x"
+            type="image/png"
+          />
+          <img src="/image/Logo_199.png" alt="Logo" width="199" />
         </picture>
       </a>
-      
-        <ul class="header__nav__menu">
-          <li><a class="menu__link"  href="#">Home</a></li>
-          <li><a class="menu__link"  href="#">About us</a></li>
-          <li><a class="menu__link"  href="#">How it’s made?</a></li>
-          <li><a class="menu__link"  href="#">Our products</a></li>
-          <li><a class="menu__link"  href="#">Contact</a></li>
-        </ul>
-      
 
-        <button class="header__burger" type="button" title="Title" data-mobile-menu-open>
-          <svg width="20" height="12">
-            <use href="/Icons/Icons.svg#icon-Burger"></use>
-          </svg>
-        </button>
-        
+      <ul class="menu">
+        <li><a class="menu__link" href="#">Home</a></li>
+        <li><a class="menu__link" href="#">About us</a></li>
+        <li><a class="menu__link" href="#">How it’s made?</a></li>
+        <li><a class="menu__link" href="#">Our products</a></li>
+        <li><a class="menu__link" href="#">Contact</a></li>
+      </ul>
 
-        <button class="tablet__buy-btn" type="button">Buy now
-          <svg class="tablet__buy--arrow" width="6" height="8">
-            <use href="/Icons/Icons.svg#icon-buy-arrow"></use>
-          </svg>
-        </button>
-    
+      <button
+        class="button burger"
+        type="button"
+        title="Title"
+        data-mobile-menu-open
+      >
+        <svg width="20" height="12">
+          <use href="/Icons/Icons.svg#icon-Burger"></use>
+        </svg>
+      </button>
 
-      <div class="backdrop " data-mobile-menu>
-        <div class="mobile__menu">
-          <div class="menu__close">
-            <button class="header__burger close" type="button" title="Title"  data-mobile-menu-close>
+      <button class="button button-tablet" type="button">
+        Buy now
+        <svg class="icon-arrow" width="6" height="8">
+          <use href="/Icons/Icons.svg#icon-buy-arrow"></use>
+        </svg>
+      </button>
+
+      <div class="backdrop is-hidden" data-mobile-menu>
+        <div class="mobile-menu">
+          <div class="menu-close">
+            <button
+              class="menu-close__button"
+              type="button"
+              title="Title"
+              data-mobile-menu-close
+            >
               <svg width="14" height="14">
                 <use href="/Icons/Icons.svg#close-menu"></use>
               </svg>
             </button>
           </div>
           <div class="buy-wrap">
-            <button class="buy-btn" type="button">Buy now
-              <svg class="buy--arrow" width="6" height="8">
+            <button class="buy-btn" type="button">
+              Buy now
+              <svg class="icon-arrow" width="6" height="8">
                 <use href="/Icons/Icons.svg#icon-buy-arrow"></use>
               </svg>
             </button>
           </div>
-          <ul>           
+          <ul>
             <li class="menu__item">
               <a class="menu__link" href="#">Home</a>
             </li>
@@ -67,44 +78,53 @@
           </ul>
         </div>
       </div>
-
     </nav>
   </div>
 </header>
-
 
 <!-- Секция герой -->
 <section class="hero">
   <div class="container">
     <div class="hero__wrap">
       <div class="hero__title__wrap">
-        <h1 class="hero__title">ice cream made with <span class="hero__title__word">passion</span></h1>
+        <h1 class="hero__title">
+          ice cream made with <span class="hero__title__word">passion</span>
+        </h1>
         <ul class="hero__title--button">
           <li>
             <button class="hero__title__button" type="button">
-              <a href="">Products</a></button>
+              <a href="">Products</a>
+            </button>
           </li>
           <li>
             <button class="hero__title__button" type="button">
-              <a href="">How it’s made?</a></button>
+              <a href="">How it’s made?</a>
+            </button>
           </li>
         </ul>
 
         <!-- <div>
           <img src="/image/milk-glass@2x.png" alt="" width="154" height="156">
         </div> -->
+      </div>
 
-      </div>
-    
       <div class="hero__ice-cream">
-    
-        <img class="hero__circle" src="/image/Ellipse 3@2x.png" alt="Circle" width="290" height="344">
-    
-    
-        <img class="hero__ice-cream-pic" src="/image/header-ice-cream@2x.png" alt="header-ice-cream" width="172"
-          height="410">
+        <img
+          class="hero__circle"
+          src="/image/Ellipse 3@2x.png"
+          alt="Circle"
+          width="290"
+          height="344"
+        />
+
+        <img
+          class="hero__ice-cream-pic"
+          src="/image/header-ice-cream@2x.png"
+          alt="header-ice-cream"
+          width="172"
+          height="410"
+        />
       </div>
-    
     </div>
   </div>
 </section>

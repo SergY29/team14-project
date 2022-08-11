@@ -10,13 +10,13 @@ body.modal-open {
   overflow: hidden;
 }
 
-// button {
-//   display: inline-flex;
-//   margin: 0;
-//   padding: 0;
-//   border: none;
-//   font: inherit;
-//   color: inherit;
-//   background-color: transparent;
-//   cursor: pointer;
-// }
+button {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}

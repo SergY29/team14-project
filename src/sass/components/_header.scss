@@ -10,15 +10,15 @@
     padding-top: 36px;
   }
 
-  &__nav {
+.site-nav {
     display: flex;
-
     @media screen and (min-width: 1200px) {
       justify-content: space-between;
     }
+  }
 
-    &__menu {
-      display: none;
+.menu {
+    display: none;
       @media screen and (min-width: 1200px) {
         display: flex;
         gap: 35px;
@@ -26,9 +26,8 @@
       }
     }
   }
-}
 
-.header__burger {
+.burger {
   border: none;
   background-color: var(--accent-backgroung-color);
   margin-left: auto;
@@ -37,10 +36,8 @@
   }
 }
 
-.tablet__buy-btn {
+.button-tablet {
   display: none;
-  position: relative;
-
   width: 160px;
   height: 44px;
 
@@ -49,18 +46,19 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-
-  color: #d41443;
+  color: var(--accent-text-color);
+  background-color: var(--dominant-text-color);
   margin-left: 32px;
 
-  &:hover {
-    background: #ecebeb;
+  &:hover,
+  &:focus {
+    background-color: var(--alternative-agency-color);
   }
 
   @media screen and (min-width: 768px) {
     display: block;
   }
 }
-.tablet__buy--arrow {
+.icon-arrow {
   margin-left: 10px;
 }
