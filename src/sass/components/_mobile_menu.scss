@@ -1,41 +1,4 @@
-hr:first-child {
-  margin-top: 0px;
-}
-hr {
-  border-color: #e18298;
-  margin: 12px 0px;
-}
-.overlay {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background: rgba(227, 129, 236, 0.3);
-
-  z-index: 30;
-  overflow: scroll;
-
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 200ms linear;
-}
-.overlay.overlay.is-hidden {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
-}
-.close {
-  background-color: #e17992;
-  margin-right: 20px;
-  padding: 6px;
-}
-.overlay.is-hidden .header__mobile__menu {
-  transform: translate(-100%, 0%);
-}
-
-.header__mobile__menu {
+.mobile__menu {
   position: absolute;
   top: 0%;
   left: 100%;
@@ -43,7 +6,6 @@ hr {
   height: 504px;
 
   background-color: #e17992;
-  z-index: 9999;
   transition: transform 250ms linear 250ms;
   @media screen and (min-width: 768px) {
     width: 254px;
@@ -54,16 +16,22 @@ hr {
   }
 }
 
-.mobile__menu--close-btn {
+.menu__close {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
 }
-.mobile__menu--buy-wrap {
+.close {
+  background-color: #e17992;
+  margin-right: 20px;
+  padding: 6px;
+}
+
+.buy-wrap {
   display: flex;
   justify-content: center;
 }
-.mobile__menu--buy-btn {
+.buy-btn {
   position: relative;
   width: 209px;
   height: 44px;
@@ -76,16 +44,31 @@ hr {
   margin-top: 26px;
   margin-bottom: 20px;
   color: var(--accent-text-color);
+
+  &:hover {
+    background: #ecebeb;
+  }
   @media screen and (min-width: 768px) {
     width: 180px;
   }
 }
-.mobile__menu--buy--arrow {
-  position: absolute;
-  right: 38px;
-  top: 19px;
+
+.buy--arrow {
+  margin-left: 14px;
+  @media screen and (min-width: 768px) {
+    margin-left: 10px;
+  }
 }
-.mobile__menu__item {
+.menu__item {
+  border-top: 1px solid #e18298;
+  padding: 12px 0px;
+
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+}
+
+.menu__link {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
@@ -93,10 +76,10 @@ hr {
   color: var(--dominant-text-color);
   margin-left: 20px;
 
+  &:hover {
+    color: var(--accent-text-color);
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 0px;
   }
-}
-.mobile__menu__item:hover {
-  color: var(--accent-text-color);
 }

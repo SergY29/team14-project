@@ -37,7 +37,7 @@
   }
 }
 
-.tablet__menu--buy-btn {
+.tablet__buy-btn {
   display: none;
   position: relative;
 
@@ -52,12 +52,15 @@
 
   color: #d41443;
   margin-left: 32px;
+
+  &:hover {
+    background: #ecebeb;
+  }
+
   @media screen and (min-width: 768px) {
     display: block;
   }
 }
-.tablet__menu--buy--arrow {
-  position: absolute;
-  right: 28px;
-  top: 19px;
+.tablet__buy--arrow {
+  margin-left: 10px;
 }
