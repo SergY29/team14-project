@@ -1,3 +1,11 @@
 .contacts__header {
     font-size: 0;
 }
+
+.contacts__block {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--alternative-text-color);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+}
