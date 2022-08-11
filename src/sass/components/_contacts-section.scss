@@ -1,6 +1,7 @@
-.contacts__name {
+.contacts__name{
     font-size: 0;
 }
+
 .content {
     display: flex;
     justify-content: space-between;
@@ -8,7 +9,7 @@
     //flex-wrap:wrap; mob
 }
 
-.content__name {    
+.content__block {    
     display: flex;
     flex-direction: column;
     background-color: var(--dominant-text-color);
