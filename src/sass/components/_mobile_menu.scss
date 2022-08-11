@@ -4,10 +4,15 @@
   right: 0;
   width: 250px;
   height: 504px;
+<<<<<<< Updated upstream
 
   opacity: 1;
     visibility: visible;
 
+=======
+  opacity: 1;
+  visibility: visible;
+>>>>>>> Stashed changes
   background-color: var(--background-mobile-menu-color);
   transition: transform 250ms linear 250ms;
   @media screen and (min-width: 768px) {
@@ -18,8 +23,11 @@
     display: none;
   }
 }
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
 .menu-close {
   display: flex;
   justify-content: flex-end;
@@ -29,7 +37,6 @@
   margin-right: 20px;
   padding: 6px;
 }
-
 .buy-wrap {
   display: flex;
   justify-content: center;
@@ -37,7 +44,6 @@
 .buy-btn {
   width: 209px;
   height: 44px;
-
   border: none;
   border-radius: 22px;
   font-weight: 700;
@@ -47,7 +53,10 @@
   margin-bottom: 20px;
   color: var(--accent-text-color);
   background-color: var(--dominant-text-color);
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
   &:hover,
   &:focus {
     background-color: var(--alternative-agency-color);
@@ -56,7 +65,10 @@
     width: 180px;
   }
 }
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 .icon-arrow {
   margin-left: 14px;
   @media screen and (min-width: 768px) {
@@ -65,23 +77,27 @@
 }
 .menu__item {
   border-top: 1px solid var(--border-mobile-menu-color);
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes
   &:last-child {
     border-bottom: 1px solid var(--border-mobile-menu-color);
   }
 }
-
 .menu__link {
   display: block;
+<<<<<<< Updated upstream
     padding: 12px 0px;
+=======
+  padding: 12px 0px;
+>>>>>>> Stashed changes
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
-
   color: var(--dominant-text-color);
   margin-left: 20px;
-
   &:hover {
     color: var(--accent-text-color);
   }

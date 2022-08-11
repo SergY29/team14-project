@@ -43,6 +43,11 @@
   --quotes-color: #e1e1e1;
   --point-review-color: #c7133e;
   --sosials-inactive-color: #fea5bb;
+  --quotes-color: #e1e1e1;
+  --point-review-color: #c7133e;
+  --sosials-inactive-color: #fea5bb;
+  --border-mobile-menu-color: #e18298;
+  --background-mobile-menu-color: #e17992;
 }
 
 body {
@@ -55,6 +60,17 @@ body {
 
 body.modal-open {
   overflow: hidden;
+}
+
+button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 h1,
@@ -111,20 +127,17 @@ a {
   background: rgba(227, 129, 236, 0.3);
   z-index: 99;
   overflow: scroll;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
   transition: opacity 200ms linear;
 }
 
 .backdrop.is-hidden {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
-.backdrop.is-hidden .mobile__menu {
-  transform: translate(-100%, 0%);
+.backdrop.is-hidden .mobile-menu {
+  transform: translate(100%, 0%);
 }
 
 .section {
@@ -165,41 +178,38 @@ a {
     padding-top: 36px;
   }
 }
-
-.site__nav {
+.header .site-nav {
   display: flex;
 }
 @media screen and (min-width: 1200px) {
-  .site__nav {
+  .header .site-nav {
     justify-content: space-between;
   }
 }
-
-.nav__menu {
+.header .menu {
   display: none;
 }
 @media screen and (min-width: 1200px) {
-  .nav__menu {
+  .header .menu {
     display: flex;
     gap: 35px;
     align-items: center;
   }
 }
 
-.header__burger {
+.burger {
   border: none;
   background-color: var(--accent-backgroung-color);
   margin-left: auto;
 }
 @media screen and (min-width: 1200px) {
-  .header__burger {
+  .burger {
     display: none;
   }
 }
 
-.tablet__buy-btn {
+.button-tablet {
   display: none;
-  position: relative;
   width: 160px;
   height: 44px;
   border: none;
@@ -207,51 +217,53 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
-  color: #d41443;
+  color: var(--accent-text-color);
+  background-color: var(--dominant-text-color);
   margin-left: 32px;
 }
-.tablet__buy-btn:hover {
-  background: #ecebeb;
+.button-tablet:hover, .button-tablet:focus {
+  background-color: var(--alternative-agency-color);
 }
 @media screen and (min-width: 768px) {
-  .tablet__buy-btn {
+  .button-tablet {
     display: block;
   }
 }
 
-.tablet__buy--arrow {
+.icon-arrow {
   margin-left: 10px;
 }
 
-.mobile__menu {
+.mobile-menu {
   position: absolute;
-  top: 0%;
-  left: 100%;
+  top: 0;
+  right: 0;
   width: 250px;
   height: 504px;
-  background-color: #e17992;
+  opacity: 1;
+  visibility: visible;
+  background-color: var(--background-mobile-menu-color);
   transition: transform 250ms linear 250ms;
 }
 @media screen and (min-width: 768px) {
-  .mobile__menu {
+  .mobile-menu {
     width: 254px;
     height: 100vh;
   }
 }
 @media screen and (min-width: 1200px) {
-  .mobile__menu {
+  .mobile-menu {
     display: none;
   }
 }
 
-.menu__close {
+.menu-close {
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
 }
 
-.close {
-  background-color: #e17992;
+.menu-close__button {
   margin-right: 20px;
   padding: 6px;
 }
@@ -262,7 +274,6 @@ a {
 }
 
 .buy-btn {
-  position: relative;
   width: 209px;
   height: 44px;
   border: none;
@@ -273,9 +284,10 @@ a {
   margin-top: 26px;
   margin-bottom: 20px;
   color: var(--accent-text-color);
+  background-color: var(--dominant-text-color);
 }
-.buy-btn:hover {
-  background: #ecebeb;
+.buy-btn:hover, .buy-btn:focus {
+  background-color: var(--alternative-agency-color);
 }
 @media screen and (min-width: 768px) {
   .buy-btn {
@@ -283,24 +295,25 @@ a {
   }
 }
 
-.buy--arrow {
+.icon-arrow {
   margin-left: 14px;
 }
 @media screen and (min-width: 768px) {
-  .buy--arrow {
+  .icon-arrow {
     margin-left: 10px;
   }
 }
 
 .menu__item {
-  border-top: 1px solid #e18298;
-  padding: 12px 0px;
+  border-top: 1px solid var(--border-mobile-menu-color);
 }
 .menu__item:last-child {
-  border-bottom: 1px solid #e18298;
+  border-bottom: 1px solid var(--border-mobile-menu-color);
 }
 
 .menu__link {
+  display: block;
+  padding: 12px 0px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.28;
