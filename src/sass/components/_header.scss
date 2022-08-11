@@ -9,42 +9,6 @@
   @media screen and (min-width: 1200px) {
     padding-top: 36px;
   }
-<<<<<<< Updated upstream
-}
-.site__nav {
-  display: flex;
-
-
-.site-nav {
-    display: flex;
-    @media screen and (min-width: 1200px) {
-      justify-content: space-between;
-    }
-  }
-
-.menu {
-    display: none;
-      @media screen and (min-width: 1200px) {
-        display: flex;
-        gap: 35px;
-        align-items: center;
-      }
-    }
-=======
-  @media screen and (min-width: 1200px) {
-    justify-content: space-between;
-  }
-}
-.nav__menu {
-  display: none;
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    gap: 35px;
-    align-items: center;
->>>>>>> f06554a8fd51f9a5f732b0dd39f2bcf7059bd46b
-  }
-
-=======
   .site-nav {
     display: flex;
     @media screen and (min-width: 1200px) {
@@ -60,7 +24,6 @@
     }
   }
 }
->>>>>>> Stashed changes
 .burger {
   border: none;
   background-color: var(--accent-backgroung-color);
@@ -69,10 +32,6 @@
     display: none;
   }
 }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 .button-tablet {
   display: none;
   width: 160px;
@@ -85,10 +44,6 @@
   color: var(--accent-text-color);
   background-color: var(--dominant-text-color);
   margin-left: 32px;
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
   &:hover,
   &:focus {
     background-color: var(--alternative-agency-color);
