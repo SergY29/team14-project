@@ -1,0 +1,407 @@
+.howe-it-background {
+    background-repeat: no-repeat;
+    background-color: #fff5f6;
+  
+    @media screen and (max-width: 767px) {
+      background-image: url(../images-all/how-it/how-it-fon-mob@2x.png),
+        url(../images-all/how-it/how-it-fon-mob.png);
+  
+      @media screen and (min-width: 320px) {
+        background-position: 100% 48%;
+        background-size: 100%;
+  
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url(../images-all/how-it/how-it-fon-desk@2x.png),
+            url(../images-all/how-it/how-it-fon-desk.png);
+        }
+      }
+    }
+  }
+  .how-it-background-image {
+    @media screen and (min-width: 1200px) {
+      background-image: url(../images-all/how-it/how-it-fon-desk.png);
+      background-position: 100% 53%;
+      max-width: 1300px;
+      margin-right: auto;
+      margin-left: auto;
+      background-repeat: no-repeat;
+  
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url(../images-all/how-it/how-it-fon-desk.png);
+      }
+    }
+  }
+  
+  /*MOB*/
+  @media screen and (max-width: 767px) {
+    .hawe-its-made {
+      padding-top: 125px;
+      padding-bottom: 145px;
+    }
+  
+    .hawe-it-main-taitle h2 {
+      font-family: Titan One;
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 26px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: 39px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent-text-color);
+    }
+  
+    .hawe-it-main-taitle p {
+      font-family: Titan One;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.17px;
+      margin-left: auto;
+      margin-right: auto;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      text-align: center;
+      color: var(--title-accent-color);
+    }
+    .hawe-it-container-about-item img {
+      max-width: 100%;
+      height: auto;
+      overflow: auto;
+      margin-bottom: 46px;
+    }
+  
+    .hawe-it-text-black {
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.76;
+      margin-bottom: 33px;
+      color: var(--usual-text-color);
+      font-size: 14px;
+      line-height: 1.76;
+    }
+  
+    .hawe-it-text-about {
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.5;
+      margin-bottom: 17px;
+      margin-right: auto;
+      margin-left: auto;
+      color: var(--alternative-text-color);
+    }
+  
+    .hawe-it-text-about-two {
+        font-family: DM Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.5;
+      margin-bottom: 62px;
+      color: var(--alternative-text-color);
+    }
+  
+    .hawe-its-made-btn {
+      width: 176px;
+      height: 44px;
+      background: #ffffff;
+      border-radius: 22px;
+      margin-bottom: 39px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-right: 37px;
+      padding-left: 37px;
+      justify-content: center;
+      border: none;
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.29px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: var(--accent-text-color);
+      &:focus,
+      &:hover {
+        background-color: #ecebeb;
+        border: none;
+      }
+      svg {
+        margin-left: 14px;
+        width: 5px;
+        height: 8px;
+        color: var(--accent-text-color);
+      }
+    }
+  
+    // .hawe-it-container-our-advantages-item img {
+    //   margin-top: 20px;
+    //   margin-bottom: 16px;
+    // }
+    // .hawe-it-container-our-advantages-item h3 {
+    //   width: 98px;
+    //   height: 56px;
+    //   left: 20px;
+    //   top: 3716px;
+  
+    //   font-family: Titan One;
+    //   font-style: normal;
+    //   font-weight: normal;
+    //   font-size: 36px;
+    //   line-height: 41px;
+    //   letter-spacing: 0.04em;
+    //   text-transform: uppercase;
+    //   color: var(--accent-text-color);
+    // }
+  
+    // .hawe-it-container-our-advantages-item p {
+    //   display: inline-block;
+    //   width: 230px;
+    //   height: 36px;
+    //   font-family: DM Sans;
+    //   font-style: normal;
+    //   font-weight: bold;
+    //   font-size: 12px;
+    //   color: var(--alternative-text-color);
+    // }
+  }
+  /*TAB*/
+  
+  @media screen and (min-width: 768px) {
+    .hawe-its-made {
+      padding-top: 130px;
+      padding-bottom: 245px;
+    }
+  
+    .hawe-it-main-taitle h2 {
+      font-family: Titan One;
+      margin-bottom: 50px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 55px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent-text-color);
+    }
+  
+    .hawe-it-main-taitle p {
+      font-family: Titan One;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 26px;
+      line-height: 1.15px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      text-align: center;
+      color: var(--title-accent-color);
+    }
+  
+    .hawe-it-text-black {
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 25px;
+      margin-top: 50px;
+      margin-bottom: 47px;
+      color: var(--usual-text-color);
+    }
+  
+    .hawe-it-text-about {
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.78;
+      margin-bottom: 10px;
+      letter-spacing: 0.04em;
+      color: var(--alternative-text-color);
+    }
+    .hawe-it-text-about-two {
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.78;
+      margin-bottom: 62px;
+      letter-spacing: 0.04em;
+      color: var(--alternative-text-color);
+    }
+  
+    .hawe-it-container-about-item {
+      display: flex;
+    }
+    .hawe-it-container-about-list {
+      width: calc((100% - 24px) / 2);
+    }
+    .kawe {
+      margin-right: 17px;
+    }
+    .hawe-its-made-btn {
+      width: 176px;
+      height: 44px;
+      background: #ffffff;
+      border-radius: 22px;
+      margin-bottom: 39px;
+      padding-right: 37px;
+      padding-left: 37px;
+      justify-content: center;
+  
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.29px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: var(--accent-text-color);
+      &:focus,
+      &:hover {
+        background-color: #ecebeb;
+      }
+      svg {
+        margin-left: 14px;
+        width: 5px;
+        height: 8px;
+      }
+    }
+  
+    // .hawe-it-container-our-advantages-item {
+    //   display: flex;
+    // }
+  
+    // .advantages-list {
+    //   width: calc((100% - 160px) / 3);
+    // }
+  
+    // .advantages-list:not(:last-child) {
+    //   margin-right: 60px;
+    // }
+  
+    // .hawe-it-container-our-advantages-item img {
+    //   margin-bottom: 36px;
+    // }
+    // .hawe-it-container-our-advantages-item h3 {
+    //   margin-bottom: 13px;
+    //   font-family: Titan One;
+    //   font-style: normal;
+    //   font-weight: normal;
+    //   font-size: 36px;
+    //   line-height: 41px;
+    //   letter-spacing: 0.04em;
+    //   text-transform: uppercase;
+    //   color: var(--accent-text-color);
+    // }
+  
+    // .hawe-it-container-our-advantages-item b {
+    //   font-family: DM Sans;
+    //   font-style: normal;
+    //   font-weight: bold;
+    //   font-size: 14px;
+    //   line-height: 24px;
+    //   letter-spacing: 0.04px;
+    //   color: var(--usual-text-color);
+    // }
+  }
+  
+  /*DESC TOP*/
+  @media screen and (min-width: 1200px) {
+    .hawe-its-made {
+      padding-top: 125px;
+      padding-bottom: 350px;
+    }
+  
+    .hawe-it-main-taitle h2 {
+      font-size: 58px;
+      line-height: 66px;
+      letter-spacing: 0.06em;
+    }
+  
+    .hawe-it-main-taitle p {
+      font-size: 30px;
+      letter-spacing: 0.04em;
+    }
+  
+    .hawe-it-text-black {
+      font-size: 16px;
+      line-height: 28px;
+      margin-bottom: 35px;
+      letter-spacing: 0.04em;
+      color: var(--usual-text-color);
+    }
+  
+    .hawe-it-text-about {
+      line-height: 1.92;
+      margin-bottom: 10px;
+    }
+    .hawe-it-text-about-two {
+      line-height: 1.92;
+      margin-bottom: 10px;
+      margin-bottom: 45px;
+    }
+  
+    .hawe-it-container-about-item {
+      display: flex;
+    }
+    .hawe-it-container-about-list {
+      width: calc((100% - 24px) / 2);
+    }
+    .kawe {
+      margin-right: 17px;
+    }
+    .hawe-its-made-btn {
+      background: #ffffff;
+      border-radius: 22px;
+      margin-bottom: 39px;
+      padding-right: 37px;
+      padding-left: 37px;
+      justify-content: center;
+      font-size: 15px;
+      line-height: 21px;
+    }
+  
+    svg {
+      margin-left: 14px;
+      width: 8px;
+      height: 10px;
+    }
+  
+    // .hawe-it-container-our-advantages-item {
+    //   display: flex;
+    // }
+  
+    // .advantages-list {
+    //   width: calc((100% - 160px) / 3);
+    // }
+  
+    // .advantages-list:not(:last-child) {
+    //   margin-right: 60px;
+    // }
+  
+    // .hawe-it-container-our-advantages-item img {
+    //   margin-bottom: 40px;
+    // }
+  
+    // .hawe-it-container-our-advantages-item h3 {
+    //   margin-bottom: 13px;
+    //   font-size: 56px;
+    //   line-height: 66px;
+    // }
+  }
+  
