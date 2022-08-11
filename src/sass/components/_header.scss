@@ -9,23 +9,25 @@
   @media screen and (min-width: 1200px) {
     padding-top: 36px;
   }
-}
 
-.header__nav {
-  display: flex;
-
-  @media screen and (min-width: 1200px) {
-    justify-content: space-between;
-  }
-}
-.header__nav__menu {
-  display: none;
-  @media screen and (min-width: 1200px) {
+  &__nav {
     display: flex;
-    gap: 35px;
-    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+    }
+
+    &__menu {
+      display: none;
+      @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 35px;
+        align-items: center;
+      }
+    }
   }
 }
+
 .header__burger {
   border: none;
   background-color: var(--accent-backgroung-color);
@@ -33,75 +35,6 @@
   @media screen and (min-width: 1200px) {
     display: none;
   }
-}
-.header__hero {
-  display: flex;
-}
-
-.header__title {
-  width: 218px;
-  font-family: 'Titan One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--dominant-text-color);
-}
-
-.header__title__word {
-  font-size: 48px;
-  line-height: 0.95;
-  color: var(--accent-text-color);
-}
-
-.header__title--button {
-  display: inline-flex;
-  margin-top: 20px;
-}
-.header__title__button:first-child {
-  margin-right: 8px;
-}
-.header__title__button {
-  background-color: var(--accent-text-color);
-  height: 24px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-  color: var(--dominant-text-color);
-  border: none;
-  border-radius: 20px;
-}
-.header__title__button:hover {
-  background-color: var(--dominant-text-color);
-  color: var(--accent-text-color);
-}
-
-.header__ice-cream {
-  margin-top: 34px;
-  margin-left: auto;
-  @media screen and (min-width: 767px) {
-  }
-}
-.header__title__wrap {
-  position: absolute;
-  margin-top: 136px;
-  z-index: 10;
-  @media screen and (min-width: 768px) {
-    margin-top: 20px;
-  }
-}
-.header__circle {
-  right: 0px;
-  position: absolute;
-  top: 82px;
-}
-.header__ice-cream-pic {
-  position: relative;
-  margin-right: 20px;
 }
 
 .tablet__menu--buy-btn {
