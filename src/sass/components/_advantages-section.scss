@@ -1,0 +1,40 @@
+.section__advantages {
+    padding-top: 0;
+    background-color: var(--backgroung-color);
+    outline: 2px solid red;
+}
+
+.advantages__item::before {
+    content: '';
+
+}
+
+.advantages__quantity {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    outline: 2px solid red;
+    margin-top: 16px;
+    
+    color: #D41443;
+}
+
+.advantages__description {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    margin-top: 20px;
+    outline: 2px solid red;
+
+    color: var(--usual-text-color);
+}
+
+.advantages__item:not(:last-child) {
+    margin-bottom: 32px;
+}
