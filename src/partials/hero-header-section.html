@@ -1,14 +1,32 @@
 <header class="header">
   <div class="container">
     <nav class="header__nav">
+
       <a href="#" class="logo">
         <img src="../image/Logo@2x.png" alt="Logo" width="199" height="50">
       </a>
 
+
       
+        <ul class="header__nav__menu">
+          <li class="mobile__menu__item"><a href="#">Home</a></li>
+          <li class="mobile__menu__item"><a href="#">About us</a></li>
+          <li class="mobile__menu__item"><a href="#">How it’s made?</a></li>
+          <li class="mobile__menu__item"><a href="#">Our products</a></li>
+          <li class="mobile__menu__item"><a href="#">Contact</a></li>
+        </ul>
+      
+
         <button class="header__burger" type="button" title="Title" data-mobile-menu-open>
           <svg width="20" height="12">
             <use href="/Icons/Icons.svg#icon-Burger"></use>
+          </svg>
+        </button>
+        
+
+        <button class="tablet__menu--buy-btn tablet " type="button">Buy now
+          <svg class="tablet__menu--buy--arrow" width="6" height="8">
+            <use href="/Icons/Icons.svg#icon-buy-arrow"></use>
           </svg>
         </button>
     </nav>
@@ -54,10 +72,12 @@
         <h1 class="header__title">ice cream made with <span class="header__title__word">passion</span></h1>
         <ul class="header__title--button">
           <li>
-            <button class="header__title__button" type="button"><a href="">Products</a></button>
+            <button class="header__title__button" type="button">
+              <a href="">Products</a></button>
           </li>
           <li>
-            <button class="header__title__button" type="button"><a href="">How it’s made?</a></button>
+            <button class="header__title__button" type="button">
+              <a href="">How it’s made?</a></button>
           </li>
         </ul>
       </div>

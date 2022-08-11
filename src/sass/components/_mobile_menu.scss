@@ -14,6 +14,7 @@ hr {
   background: rgba(227, 129, 236, 0.3);
 
   z-index: 30;
+  overflow: scroll;
 
   opacity: 0;
   visibility: hidden;
@@ -44,6 +45,13 @@ hr {
   background-color: #e17992;
   z-index: 9999;
   transition: transform 250ms linear 250ms;
+  @media screen and (min-width: 768px) {
+    width: 254px;
+    height: 100vh;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 
 .mobile__menu--close-btn {
@@ -68,6 +76,9 @@ hr {
   margin-top: 26px;
   margin-bottom: 20px;
   color: var(--accent-text-color);
+  @media screen and (min-width: 768px) {
+    width: 180px;
+  }
 }
 .mobile__menu--buy--arrow {
   position: absolute;
@@ -81,6 +92,10 @@ hr {
 
   color: var(--dominant-text-color);
   margin-left: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+  }
 }
 .mobile__menu__item:hover {
   color: var(--accent-text-color);

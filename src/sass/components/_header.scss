@@ -3,15 +3,36 @@
   padding-top: 8px;
   position: relative;
   overflow: hidden;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 36px;
+  }
 }
 
 .header__nav {
   display: flex;
-  justify-content: space-between;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
+}
+.header__nav__menu {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+  }
 }
 .header__burger {
   border: none;
   background-color: var(--accent-backgroung-color);
+  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
 }
 .header__hero {
   display: flex;
@@ -62,11 +83,16 @@
 .header__ice-cream {
   margin-top: 34px;
   margin-left: auto;
+  @media screen and (min-width: 767px) {
+  }
 }
 .header__title__wrap {
   position: absolute;
   margin-top: 136px;
   z-index: 10;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
 }
 .header__circle {
   right: 0px;
@@ -76,4 +102,29 @@
 .header__ice-cream-pic {
   position: relative;
   margin-right: 20px;
+}
+
+.tablet__menu--buy-btn {
+  display: none;
+  position: relative;
+
+  width: 160px;
+  height: 44px;
+
+  border: none;
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+
+  color: #d41443;
+  margin-left: 32px;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+.tablet__menu--buy--arrow {
+  position: absolute;
+  right: 28px;
+  top: 19px;
 }
