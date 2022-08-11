@@ -9,6 +9,10 @@
   @media screen and (min-width: 1200px) {
     padding-top: 36px;
   }
+}
+.site__nav {
+  display: flex;
+
 
 .site-nav {
     display: flex;
@@ -25,6 +29,18 @@
         align-items: center;
       }
     }
+=======
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
+}
+.nav__menu {
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+>>>>>>> f06554a8fd51f9a5f732b0dd39f2bcf7059bd46b
   }
 
 .burger {
