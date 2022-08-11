@@ -43,9 +43,6 @@
   --quotes-color: #e1e1e1;
   --point-review-color: #c7133e;
   --sosials-inactive-color: #fea5bb;
-  --quotes-color: #e1e1e1;
-  --point-review-color: #c7133e;
-  --sosials-inactive-color: #fea5bb;
   --border-mobile-menu-color: #e18298;
   --background-mobile-menu-color: #e17992;
 }
@@ -63,7 +60,7 @@ body.modal-open {
 }
 
 button {
-  display: inline-flex;
+  display: block;
   margin: 0;
   padding: 0;
   border: none;
