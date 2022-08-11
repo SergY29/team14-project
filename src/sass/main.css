@@ -124,7 +124,7 @@ a {
 }
 
 .backdrop.is-hidden .mobile__menu {
-  transform: translate(-103%, 0%);
+  transform: translate(-100%, 0%);
 }
 
 .section {
@@ -165,19 +165,21 @@ a {
     padding-top: 36px;
   }
 }
-.header__nav {
+
+.site__nav {
   display: flex;
 }
 @media screen and (min-width: 1200px) {
-  .header__nav {
+  .site__nav {
     justify-content: space-between;
   }
 }
-.header__nav__menu {
+
+.nav__menu {
   display: none;
 }
 @media screen and (min-width: 1200px) {
-  .header__nav__menu {
+  .nav__menu {
     display: flex;
     gap: 35px;
     align-items: center;
