@@ -57,11 +57,11 @@
   line-height: 1.25;
   color: var(--dominant-text-color);
   border-radius: 20px;
-  @media screen and (min-width: 1200px) {
-    height: 40px;
-    font-size: 14px;
-    line-height: 1.28;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   height: 40px;
+  //   font-size: 14px;
+  //   line-height: 1.28;
+  // }
 }
 .hero__title__button:hover,
 .hero__title__button:focus,
