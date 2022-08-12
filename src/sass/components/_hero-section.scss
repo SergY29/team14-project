@@ -39,11 +39,10 @@
   font-size: 8px;
   line-height: 1.25;
   color: var(--dominant-text-color);
+  border: none;
   border-radius: 20px;
 }
-.hero__title__button:hover,
-.hero__title__button:focus,
-.hero__title__button:active {
+.hero__title__button:hover {
   background-color: var(--dominant-text-color);
   color: var(--accent-text-color);
 }
@@ -51,16 +50,21 @@
 .hero__ice-cream {
   margin-top: 34px;
   margin-left: auto;
+  @media screen and (min-width: 767px) {
+  }
 }
 .hero__title__wrap {
   position: absolute;
   margin-top: 136px;
   z-index: 10;
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+  }
 }
 .hero__circle {
   right: 0px;
   position: absolute;
-  top: 24px;
+  top: 82px;
 }
 .hero__ice-cream-pic {
   position: relative;
