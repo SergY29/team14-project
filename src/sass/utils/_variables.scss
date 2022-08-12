@@ -1,53 +1,49 @@
 @font-face {
-    font-family: 'DM Sans';
-    src: local('DM Sans'),
-        url('/fonts/DMSans-Medium.woff2') format('woff2'),
-        url('/fonts/DMSans-Medium.woff') format('woff'),
-        url('/fonts/DMSans-Medium.ttf') format('truetype'),
-        url('/fonts/DMSans-Medium.svg#DMSans-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'DM Sans';
+  src: local('DM Sans'), url('/fonts/DMSans-Medium.woff2') format('woff2'),
+    url('/fonts/DMSans-Medium.woff') format('woff'),
+    url('/fonts/DMSans-Medium.ttf') format('truetype'),
+    url('/fonts/DMSans-Medium.svg#DMSans-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'DM Sans';
-    src: local('DM Sans'),
-        url('/fonts/DMSans-Bold.woff2') format('woff2'),
-        url('/fonts/DMSans-Bold.woff') format('woff'),
-        url('/fonts/DMSans-Bold.ttf') format('truetype'),
-        url('/fonts/DMSans-Bold.svg#DMSans-Bold') format('svg');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'DM Sans';
+  src: local('DM Sans'), url('/fonts/DMSans-Bold.woff2') format('woff2'),
+    url('/fonts/DMSans-Bold.woff') format('woff'),
+    url('/fonts/DMSans-Bold.ttf') format('truetype'),
+    url('/fonts/DMSans-Bold.svg#DMSans-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'DM Sans';
-    src: local('DM Sans'),
-        url('/fonts/DMSans-Regular.woff2') format('woff2'),
-        url('/fonts/DMSans-Regular.woff') format('woff'),
-        url('/fonts/DMSans-Regular.ttf') format('truetype'),
-        url('/fonts/DMSans-Regular.svg#DMSans-Regular') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'DM Sans';
+  src: local('DM Sans'), url('/fonts/DMSans-Regular.woff2') format('woff2'),
+    url('/fonts/DMSans-Regular.woff') format('woff'),
+    url('/fonts/DMSans-Regular.ttf') format('truetype'),
+    url('/fonts/DMSans-Regular.svg#DMSans-Regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Titan One';
-    src: local('Titan One'),
-        url('/fonts/TitanOne.woff2') format('woff2'),
-        url('/fonts/TitanOne.woff') format('woff'),
-        url('/fonts/TitanOne.ttf') format('truetype'),
-        url('/fonts/TitanOne.svg#TitanOne') format('svg');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Titan One';
+  src: local('Titan One'), url('/fonts/TitanOne.woff2') format('woff2'),
+    url('/fonts/TitanOne.woff') format('woff'),
+    url('/fonts/TitanOne.ttf') format('truetype'),
+    url('/fonts/TitanOne.svg#TitanOne') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
---primary-font-family: 'DM Sans';
+    --primary-font-family: 'DM Sans';
     --alternative-font-family: 'Titan One';
     --accent-text-color: #d41443;
     --dominant-text-color: #ffffff;
@@ -66,3 +62,4 @@
     --border-mobile-menu-color: #e18298;
     --background-mobile-menu-color: #e17992;
 }
+
