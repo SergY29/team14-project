@@ -156,6 +156,8 @@ a {
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -177,23 +179,13 @@ a {
     padding-top: 36px;
   }
 }
-.header .site-nav {
+
+.site-nav {
   display: flex;
 }
-@media screen and (min-width: 1200px) {
-  .header .site-nav {
-    justify-content: space-between;
-  }
-}
-.header .menu {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .header .menu {
-    display: flex;
-    gap: 28px;
-    align-items: center;
-  }
+
+.logo {
+  margin-right: 128px;
 }
 
 .burger {
@@ -203,6 +195,17 @@ a {
 @media screen and (min-width: 1200px) {
   .burger {
     display: none;
+  }
+}
+
+.menu {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: flex;
+    gap: 35px;
+    align-items: center;
   }
 }
 
@@ -220,7 +223,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .button-tablet {
-    margin-left: 0px;
+    margin-left: 141px;
   }
 }
 .button-tablet:hover, .button-tablet:focus, .button-tablet:active {
@@ -246,6 +249,7 @@ a {
   visibility: visible;
   background-color: var(--background-mobile-menu-color);
   transition: transform 250ms linear 250ms;
+  box-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
@@ -329,7 +333,6 @@ a {
     font-size: 16px;
     line-height: 1.31;
     margin-left: 0px;
-    padding: 4px;
   }
 }
 
