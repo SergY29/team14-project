@@ -12,8 +12,10 @@
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.52 3.2l16.832 12.8-16.8 12.8"></path>
 </symbol>
 
-<!--  -->
-
+<!-- Hero icon-->
+<symbol id="icon-ellipse-hero" viewBox="0 0 32 32">
+<path fill="#ffa5ba" style="fill: var(--color1, #ffa5ba)" d="M32.192 16c0 8.837-7.206 16-16.096 16s-16.096-7.163-16.096-16c0-8.837 7.206-16 16.096-16s16.096 7.163 16.096 16z"></path>
+</symbol>
 
 </defs>
 </svg>

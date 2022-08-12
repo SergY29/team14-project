@@ -90,28 +90,58 @@
           </li>
         </ul>
 
-        <!-- <div>
-          <img src="/image/milk-glass@2x.png" alt="" width="154" height="156">
-        </div> -->
+       
       </div>
 
+      <picture>
+        <source srcset="/src/images-all/milk-glass-1200@1x.png 1x, /src/images-all/milk-glass-1200@2x.png 2x" media="(min-width: 1200px)" type="image/webp">
+        <source srcset="//src/images-all/milk-glass@1x.png 1x, /src/images-all/milk-glass@2x.png 2x" media="(min-width: 768px)" type="image/webp">
+        
+        <img class="hero__glass" src="/src/images-all/milk-glass@1x.png" alt="кувшин с молоком">
+      </picture>
+
+      <div class="hero__info">
+          <p class="hero_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+          <button class="hero__info--btn"> 
+            <!-- перенести иконку надо с Products секции  -->
+            <svg class="" width="18" height="18">
+              <use href="#"></use>
+            </svg>  
+        </button>
+      </div>
+      
       <div class="hero__ice-cream">
-        <img
-          class="hero__circle"
-          src="/src/images-all/Ellipse_3@2x.png"
-          alt="Circle"
-          width="290"
-          height="344"
-        />
+        
+        <svg class="hero__icon" >
+          <use href="/Icons/Icons.svg#icon-ellipse-hero"></use>
+        </svg> 
 
-        <img
-          class="hero__ice-cream-pic"
-          src="/src/images-all/header-ice-cream@2x.png"
-          alt="header-ice-cream"
-          width="172"
-          height="410"
-        />
+        <picture>
+          <source srcset="/src/images-all/hero-ice-cream-1200.png, /src/images-all/hero-ice-cream-1200@2x.png 2x" media="(min-width: 1200px)" type="image/webp">
+          <source srcset="/src/images-all/hero-ice-cream.png 1x, /src/images-all/hero-ice-cream@2x.png 2x" media="(max-width: 767px)" type="image/webp">
+          <source srcset="/src/images-all/hero-ice-cream-768.png 1x, /src/images-all/hero-ice-cream-768@2x.png 2x" media="(min-width: 768px)" type="image/webp">
+          
+          <img class="hero__ice-cream-pic" src="/src/images-all/hero-ice-cream.png" alt="мороженое">
+        </picture>
+        
       </div>
+      <picture>
+        <source srcset="/src/images-all/girl-hero-1200.png 1x, /src/images-all/girl-hero-1200@2x.png 2x" media="(min-width: 1200px)" type="image/webp">
+        <source srcset="/src/images-all/girl-hero.png 1x, /src/images-all/girl-hero@2x.png 2x" media="(min-width: 768px)" type="image/webp">
+        
+        <img class="hero__girl" src="/src/images-all/girl-hero.png" alt="девушка с мороженым">
+      </picture>
+      
+      <ul>
+        <li>
+          <p>16</p>
+          <p>cafes</p>
+        </li>
+        <li>
+          <p>32</p>
+          <p>food trucks</p>
+        </li>
+      </ul>
     </div>
   </div>
 </section>

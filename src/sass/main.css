@@ -345,11 +345,37 @@ a {
   text-transform: uppercase;
   color: var(--dominant-text-color);
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 22px;
+    line-height: 1.136;
+    width: 162px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 38px;
+    line-height: 1.157;
+    width: 277px;
+  }
+}
 
 .hero__title__word {
   font-size: 48px;
   line-height: 0.95;
   color: var(--accent-text-color);
+}
+@media screen and (min-width: 768px) {
+  .hero__title__word {
+    font-size: 34px;
+    line-height: 0.911;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title__word {
+    font-size: 58px;
+    line-height: 0.896;
+  }
 }
 
 .hero__title--button {
@@ -373,6 +399,13 @@ a {
   border: none;
   border-radius: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .hero__title__button {
+    font-size: 14px;
+    line-height: 1.285;
+    height: 40px;
+  }
+}
 
 .hero__title__button:hover {
   background-color: var(--dominant-text-color);
@@ -393,6 +426,11 @@ a {
     margin-top: 20px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero__title__wrap {
+    margin-top: 60px;
+  }
+}
 
 .hero__circle {
   right: 0px;
@@ -403,6 +441,65 @@ a {
 .hero__ice-cream-pic {
   position: relative;
   margin-right: 20px;
+}
+
+.hero__glass {
+  position: absolute;
+  margin-top: 164px;
+}
+@media screen and (max-width: 767px) {
+  .hero__glass {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__glass {
+    margin-top: 301px;
+    margin-bottom: 60px;
+  }
+}
+
+.hero__info {
+  width: 114px;
+  margin-left: 152px;
+  margin-top: 205px;
+}
+@media screen and (max-width: 767px) {
+  .hero__info {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__info {
+    width: 200px;
+    margin-left: 229px;
+    margin-top: 369px;
+  }
+}
+
+.hero_text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .hero_text {
+    font-size: 14px;
+    line-height: 1.428;
+  }
+}
+
+.hero__info--btn {
+  margin-top: 7px;
+}
+
+.hero__girl {
+  position: absolute;
+  margin-right: 0;
+  margin-top: 336px;
 }
 
 .gallery {
