@@ -94,7 +94,6 @@
     font-size: 36px;
     line-height: 1.14;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     margin-top: 16px;
     
     color: var(--accent-text-color);
@@ -102,6 +101,12 @@
 
 .advantages__quantity {
     display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .advantages__quantity--unit {
+        text-transform: uppercase;
+    }
 }
 
 @media screen and (min-width: 768px) {
