@@ -1,4 +1,5 @@
 .header {
+  top: 0;
   position: absolute;
   width: 100%;
   padding-top: 8px;
@@ -43,6 +44,10 @@
   color: var(--accent-text-color);
   background-color: var(--dominant-text-color);
   margin-left: 32px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0px;
+  }
 
   &:hover,
   &:focus,
