@@ -2,7 +2,7 @@
   &__item {
     width: 100%;
 
-    outline: 1px solid red;
+    // outline: 1px solid red;
   }
   &__body {
     display: flex;
@@ -32,13 +32,33 @@
       margin-bottom: 16px;
     }
   }
-  &__text {
-    display: flex;
-    flex-direction: column;
 
-    min-width: 157px;
-    padding: 43px 58px 26px 65px;
-    background: var(--slider__text);
+  &__gradient {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+    background-image: repeating-linear-gradient(
+      to bottom,
+      var(--slider__text),
+      var(--slider__text) 28px,
+      var(--quotes-color) 30px,
+      var(--quotes-color) 29px
+    );
+  }
+
+  &__text {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 8px;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    z-index: 2;
 
     @include table {
       margin-bottom: 24px;
@@ -48,20 +68,11 @@
     }
   }
 
-  &__text p {
-    position: relative;
-    text-align: center;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 255%;
-    z-index: 1;
-  }
-
-  &__text p::before {
+  &__text::before {
     content: '';
     position: absolute;
     top: -13;
-    left: -12;
+    left: 3;
     z-index: -1;
     height: 40px;
     width: 54px;
@@ -75,4 +86,12 @@
     font-size: 14px;
     line-height: 186%;
   }
+}
+.drope {
+  height: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 43px;
+  padding-bottom: 17px;
+  background-color: var(--slider__text);
 }
