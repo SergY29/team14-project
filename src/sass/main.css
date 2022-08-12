@@ -162,9 +162,9 @@ a {
 .header {
   position: absolute;
   width: 100%;
-  background-color: var(--accent-backgroung-color);
   padding-top: 8px;
   overflow: hidden;
+  z-index: 20;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -190,14 +190,13 @@ a {
 @media screen and (min-width: 1200px) {
   .header .menu {
     display: flex;
-    gap: 35px;
+    gap: 28px;
     align-items: center;
   }
 }
 
 .burger {
-  border: none;
-  background-color: var(--accent-backgroung-color);
+  background-color: transparent;
   margin-left: auto;
 }
 @media screen and (min-width: 1200px) {
@@ -210,7 +209,6 @@ a {
   display: none;
   width: 160px;
   height: 44px;
-  border: none;
   border-radius: 22px;
   font-weight: 700;
   font-size: 16px;
@@ -274,7 +272,6 @@ a {
 .buy-btn {
   width: 209px;
   height: 44px;
-  border: none;
   border-radius: 22px;
   font-weight: 700;
   font-size: 16px;
@@ -324,6 +321,7 @@ a {
 @media screen and (min-width: 1200px) {
   .menu__link {
     margin-left: 0px;
+    padding: 4px;
   }
 }
 
@@ -371,8 +369,14 @@ a {
   font-size: 8px;
   line-height: 1.25;
   color: var(--dominant-text-color);
-  border: none;
   border-radius: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title__button {
+    height: 40px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
 .hero__title__button:hover,
@@ -383,29 +387,20 @@ a {
 }
 
 .hero__ice-cream {
-  margin-top: 92px;
+  margin-top: 34px;
   margin-left: auto;
 }
+
 .hero__title__wrap {
   position: absolute;
-  margin-top: 192px;
+  margin-top: 136px;
   z-index: 10;
-}
-@media screen and (min-width: 768px) {
-  .hero__title__wrap {
-    margin-top: 102px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero__title__wrap {
-    margin-top: 147px;
-  }
 }
 
 .hero__circle {
   right: 0px;
   position: absolute;
-  top: 82px;
+  top: 24px;
 }
 
 .hero__ice-cream-pic {
