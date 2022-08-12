@@ -693,7 +693,7 @@ a {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--dominant-text-color);
-  margin-bottom: 64px;
+  margin-bottom: 70px;
 }
 @media screen and (min-width: 1200px) {
   .card__title {
@@ -706,7 +706,7 @@ a {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -32px;
+  bottom: -35px;
   width: 6px;
   height: 6px;
   border-radius: 50%;
