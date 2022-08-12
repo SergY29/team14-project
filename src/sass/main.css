@@ -160,9 +160,10 @@ a {
 }
 
 .header {
+  position: absolute;
+  width: 100%;
   background-color: var(--accent-backgroung-color);
   padding-top: 8px;
-  position: relative;
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
@@ -218,7 +219,7 @@ a {
   background-color: var(--dominant-text-color);
   margin-left: 32px;
 }
-.button-tablet:hover, .button-tablet:focus {
+.button-tablet:hover, .button-tablet:focus, .button-tablet:active {
   background-color: var(--alternative-agency-color);
 }
 @media screen and (min-width: 768px) {
@@ -283,7 +284,7 @@ a {
   color: var(--accent-text-color);
   background-color: var(--dominant-text-color);
 }
-.buy-btn:hover, .buy-btn:focus {
+.buy-btn:hover, .buy-btn:focus, .buy-btn:active {
   background-color: var(--alternative-agency-color);
 }
 @media screen and (min-width: 768px) {
@@ -317,7 +318,7 @@ a {
   color: var(--dominant-text-color);
   margin-left: 20px;
 }
-.menu__link:hover {
+.menu__link:hover, .menu__link:focus, .menu__link:active {
   color: var(--accent-text-color);
 }
 @media screen and (min-width: 1200px) {
@@ -374,23 +375,30 @@ a {
   border-radius: 20px;
 }
 
-.hero__title__button:hover {
+.hero__title__button:hover,
+.hero__title__button:focus,
+.hero__title__button:active {
   background-color: var(--dominant-text-color);
   color: var(--accent-text-color);
 }
 
 .hero__ice-cream {
-  margin-top: 34px;
+  margin-top: 92px;
   margin-left: auto;
 }
 .hero__title__wrap {
   position: absolute;
-  margin-top: 136px;
+  margin-top: 192px;
   z-index: 10;
 }
 @media screen and (min-width: 768px) {
   .hero__title__wrap {
-    margin-top: 20px;
+    margin-top: 102px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title__wrap {
+    margin-top: 147px;
   }
 }
 
