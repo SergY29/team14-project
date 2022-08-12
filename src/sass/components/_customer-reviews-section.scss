@@ -33,6 +33,9 @@
     }
   }
   &__text {
+    display: flex;
+    flex-direction: column;
+
     min-width: 157px;
     padding: 43px 58px 26px 65px;
     background: var(--slider__text);
@@ -46,10 +49,24 @@
   }
 
   &__text p {
+    position: relative;
     text-align: center;
     font-weight: 500;
     font-size: 12px;
     line-height: 255%;
+    z-index: 1;
+  }
+
+  &__text p::before {
+    content: '';
+    position: absolute;
+    top: -13;
+    left: -12;
+    z-index: -1;
+    height: 40px;
+    width: 54px;
+    background-image: url(../images-all/before-object.png);
+    background-size: cover;
   }
 
   &__city {
