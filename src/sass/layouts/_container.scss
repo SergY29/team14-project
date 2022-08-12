@@ -1,14 +1,15 @@
 .container {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
+  max-width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  outline: 1px solid red;
 
-    @media (min-width: 768px) {
-        max-width: 768px;
-    }
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
 
-    @media (min-width: 1200px) {
-        max-width: 1200px;
-    }
+  @media (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }

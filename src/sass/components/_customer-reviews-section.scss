@@ -1,0 +1,61 @@
+.slider {
+  &__item {
+    width: 100%;
+
+    outline: 1px solid red;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__body:after {
+    content: '';
+    height: 4px;
+    width: 32px;
+    background-image: url(../images-all/after-dots.png);
+    background-size: cover;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  &__img {
+    margin-bottom: 32px;
+
+    @include table {
+      margin-bottom: 20px;
+    }
+    @include desktop {
+      margin-bottom: 16px;
+    }
+  }
+  &__text {
+    min-width: 157px;
+    padding: 43px 58px 26px 65px;
+    background: var(--slider__text);
+
+    @include table {
+      margin-bottom: 24px;
+    }
+    @include desktop {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__text p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+  }
+
+  &__city {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+  }
+}
