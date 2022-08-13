@@ -22,6 +22,15 @@
     margin-bottom: 16px;
   }
 
+  &__drope {
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 43px;
+    padding-bottom: 17px;
+    background-color: var(--slider__text);
+  }
+
   &__img {
     margin-bottom: 32px;
 
@@ -86,12 +95,4 @@
     font-size: 14px;
     line-height: 186%;
   }
-}
-.drope {
-  height: auto;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 43px;
-  padding-bottom: 17px;
-  background-color: var(--slider__text);
 }
