@@ -25,6 +25,10 @@
       margin-top: 4px;
       margin-bottom: 24px;
     }
+    @include desktop {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
   }
 
   &__drope {
@@ -48,9 +52,11 @@
       min-width: 620px;
     }
     @include desktop {
-      padding-left: 40px;
-      padding-right: 40px;
-      max-width: 968px;
+      padding-left: 73px;
+      padding-right: 74px;
+      padding-bottom: 38px;
+      padding-top: 47px;
+      min-width: 968px;
     }
   }
 
@@ -104,6 +110,11 @@
       line-height: 216%;
       letter-spacing: 0.04em;
     }
+    @include desktop {
+      max-width: 750px;
+      font-size: 16px;
+      line-height: 190%;
+    }
   }
 
   &__text::before {
@@ -124,6 +135,12 @@
       left: 3;
     }
     @include table {
+      top: -18px;
+      left: 0px;
+    }
+    @include desktop {
+      height: 40px;
+      width: 54px;
       top: -18px;
       left: 0px;
     }
