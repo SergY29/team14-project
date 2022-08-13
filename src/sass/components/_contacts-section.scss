@@ -1,0 +1,283 @@
+.contacts {
+    background-image: linear-gradient(
+        to bottom,
+
+        var(--dominant-text-color) 20%,  
+        var(--fon) 20%,    
+        var(--fon) 80%
+        );
+
+      
+     @media (min-width: 768px) {
+       padding-top: 40px;
+       padding-bottom: 40px;     
+       background-image: linear-gradient(
+        to bottom,
+        var(--dominant-text-color) 50%,        
+        var(--fon) 50%
+        );
+
+       }
+       @media (min-width: 1200px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-image: linear-gradient(
+            to bottom,
+            var(--dominant-text-color) 20%,  
+            var(--fon) 20%,    
+            var(--fon) 80%  
+            );
+       
+       }
+
+     &__name{
+        font-size: 0;
+        }
+}
+
+
+
+.content {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: DM Sans;
+    font-weight: 500;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+       }
+    
+           &__list {    
+        display: flex;
+        flex-direction: column;
+         background-color: var(--dominant-text-color);
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px; 
+               
+        padding: 40px 24px;
+        width: 280px;
+        &:not(:last-child) {
+                margin-bottom: 20px;
+             }
+
+         @media (min-width: 768px) {
+            padding: 40px 32px;
+            width: 100%;
+            &:not(:last-child) {
+                    margin-bottom: 0;
+                    margin-right: 32px;
+                    
+                 }
+               } 
+               @media (min-width: 1200px) {
+                padding: 40px;
+                               
+                   }               
+       
+        }
+
+         &__name {
+          width: 80px;
+         height: 20px;
+         font-size: 12px;
+         line-height: 1.86;
+        letter-spacing: 0.04em;
+        color: var(--dominant-text-color);
+        text-align: center;
+       
+
+        border-radius: 4px;
+        background-color: var(--agency-color);
+        padding:0;
+                                 
+            &--invers {
+                background-color: var(--alternative-agency-color);
+                width: 130px;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 16px;
+                line-height: 1.875;
+                 width: 75px; 
+                 height: 28px;
+                 border-radius: 6px;
+                
+            &--invers {
+                 width: 138px;
+                    }
+            } 
+
+            }   
+            
+            .content__block {
+                font-size: 12px;
+                color: var(--usual-text-color);
+                padding: 24px 0;
+                border-bottom: 1px solid #E1E1E1;
+                @media (min-width: 768px) {
+                    font-size: 14px;
+                    padding: 32px 0;
+                       } 
+                       @media (min-width: 1200px) {
+                        font-size: 16px;
+                                       
+                           }          
+                        }
+            
+            .content__city{ 
+                 
+                line-height: 1.86;
+                letter-spacing: 0.04em;
+                margin-bottom: 8px;
+
+                @media (min-width: 768px) {
+                    margin-bottom: 12px;
+                    
+                       } 
+                       @media (min-width: 1200px) {
+                        
+                        margin-bottom: 8px;
+                                       
+                           }          
+                
+                    }
+            .content__text {
+                line-height: 1.86;
+                color: var(--alternative-text-color);
+                  
+                  @media (min-width: 768px) {
+                    line-height: 1.66;
+                       } 
+                       @media (min-width: 1200px) {
+                        line-height: 1.83;
+                                       
+                           }           
+            } 
+            .content__day{
+                margin-bottom: 5px;
+                @media (min-width: 768px) {
+                    margin-bottom: 8px;
+                       } 
+            }
+            .space {
+                margin-bottom: 8px;
+                @media (min-width: 768px) {
+                    margin-bottom: 12px;
+                       } 
+            }
+           .content__time {
+            color: var(--title-accent-color);
+           }
+            
+}
+.adress {
+    margin-top: 24px;
+    @media (min-width: 768px) {
+        margin-top: 32px;
+           } 
+
+}
+.content__adress {
+    text-decoration: none; 
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    color: var(--alternative-text-color);
+
+    @media (min-width: 768px) {
+         font-size: 14px;
+         line-height: 1.83;
+           } 
+           @media (min-width: 1200px) {
+            font-size: 16px;
+                           
+               }           
+
+    }
+
+   .contacts__buttoms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 161px;
+
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+   
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        margin-top: 60px;
+        width: 100%;
+    }
+   
+   }  
+
+   .button__contacts {    
+    font-family:DM Sans;
+    font-weight: 700;
+    line-height: 1.86;
+    text-align: center;
+    align-items: center;
+    
+   
+    color: var(--dominant-text-color);
+    
+
+   background-color:var(--slider-color);
+   border-radius: 22px;
+   border: 0;   
+   padding: 5px 17px;
+
+   width: 161px;
+   height: 44px;
+ 
+  
+
+   @media (min-width: 768px) {
+    padding: 5px 30px;
+    width: 192px;
+    
+}
+
+@media (min-width: 1200px) {
+    padding: 5px 35px;
+    width: 198px;
+}
+
+   }
+
+   
+  .button__contacts--invers {
+    color: var(--slider-color);
+    background-color:var(--dominant-text-color);
+    margin-top: 10px;
+    padding: 5px 32px;
+
+    @media (min-width: 768px) {
+        margin-left: 15px;
+        margin-top: 0;
+        padding: 5px 38px;
+        width: 175px;
+        
+    }
+    
+    @media (min-width: 1200px) {
+        margin-left: 12px;
+        padding: 5px 36px;
+        width: 168px;
+    }
+  }
+
+
