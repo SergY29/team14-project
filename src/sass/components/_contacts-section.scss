@@ -9,17 +9,19 @@
     padding-top: 60px;
     padding-bottom: 40px;
     background-image: linear-gradient(to bottom,
-            var(--dominant-text-color) 20%,
-            var(--fon) 20%,
-            var(--fon) 80%);
+            var(--dominant-text-color) 24%,
+            var(--backgroung-color) 24%,
+            var(--backgroung-color) 76%);
 
     @media (min-width: 768px) {
         padding-top: 40px;
 
 
         background-image: linear-gradient(to bottom,
-                var(--dominant-text-color) 50%,
-                var(--fon) 50%);
+                var(--dominant-text-color) 47%,
+                var(--backgroung-color) 47%,
+                var(--backgroung-color) 53%);
+                
 
     }
 
@@ -28,8 +30,8 @@
         padding-bottom: 60px;
         background-image: linear-gradient(to bottom,
                 var(--dominant-text-color) 20%,
-                var(--fon) 20%,
-                var(--fon) 80%);
+                var(--backgroung-color) 20%,
+                var(--backgroung-color) 80%);
     }
 }
 
