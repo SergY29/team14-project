@@ -20,6 +20,11 @@
     align-items: center;
     margin-top: 16px;
     margin-bottom: 16px;
+
+    @include table {
+      margin-top: 4px;
+      margin-bottom: 24px;
+    }
   }
 
   &__drope {
@@ -29,6 +34,24 @@
     padding-top: 43px;
     padding-bottom: 17px;
     background-color: var(--slider__text);
+
+    @include mobile {
+      padding-left: 40px;
+      padding-right: 40px;
+      max-width: 400px;
+    }
+    @include table {
+      padding-left: 6px;
+      padding-right: 6px;
+      padding-bottom: 36px;
+      padding-top: 37px;
+      min-width: 620px;
+    }
+    @include desktop {
+      padding-left: 40px;
+      padding-right: 40px;
+      max-width: 968px;
+    }
   }
 
   &__img {
@@ -69,24 +92,41 @@
     line-height: 255%;
     z-index: 2;
 
-    @include table {
-      margin-bottom: 24px;
+    @include mobile {
+      padding-left: 37px;
+      padding-right: 30px;
     }
-    @include desktop {
-      margin-bottom: 36px;
+    @include table {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 515px;
+      font-size: 14px;
+      line-height: 216%;
+      letter-spacing: 0.04em;
     }
   }
 
   &__text::before {
     content: '';
     position: absolute;
-    top: -13;
+    top: -15;
     left: 3;
     z-index: -1;
     height: 40px;
     width: 54px;
     background-image: url(../images-all/before-object.png);
     background-size: cover;
+
+    @include mobile {
+      height: 40px;
+      width: 60px;
+      top: -15;
+      left: 3;
+    }
+    @include table {
+      top: -18px;
+      left: 0px;
+    }
   }
 
   &__city {
@@ -94,5 +134,12 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 186%;
+
+    @include table {
+      font-size: 16px;
+    }
+    @include desktop {
+      font-size: 20px;
+    }
   }
 }
