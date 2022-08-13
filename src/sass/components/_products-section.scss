@@ -189,8 +189,8 @@
     background-image: url(../images-all/products/mobile/ice-cream@1x.png);
 
     @media (min-resolution: 2dppx),
-      (min-resolution: 192dpi),
-      (min-device-pixel-ratio: 2) {
+    (min-resolution: 192dpi),
+    (min-device-pixel-ratio: 2) {
       background-image: url(../images-all/products/mobile/ice-cream@2x.png);
     }
   }
@@ -200,8 +200,8 @@
       background-image: url(../images-all/products/tablet/ice-cream@1x.png);
 
       @media (min-resolution: 2dppx),
-        (min-resolution: 192dpi),
-        (min-device-pixel-ratio: 2) {
+      (min-resolution: 192dpi),
+      (min-device-pixel-ratio: 2) {
         background-image: url(../images-all/products/tablet/ice-cream@2x.png);
       }
     }
@@ -212,8 +212,8 @@
       background-image: url(../images-all/products/desctop/ice-cream@1x.png);
 
       @media (min-resolution: 2dppx),
-        (min-resolution: 192dpi),
-        (min-device-pixel-ratio: 2) {
+      (min-resolution: 192dpi),
+      (min-device-pixel-ratio: 2) {
         background-image: url(../images-all/products/desctop/ice-cream@2x.png);
       }
     }
@@ -227,8 +227,8 @@
     background-image: url(../images-all/products/mobile/ice-coffee@1x.png);
 
     @media (min-resolution: 2dppx),
-      (min-resolution: 192dpi),
-      (min-device-pixel-ratio: 2) {
+    (min-resolution: 192dpi),
+    (min-device-pixel-ratio: 2) {
       background-image: url(../images-all/products/mobile/ice-coffee@2x.png);
     }
   }
@@ -238,8 +238,8 @@
       background-image: url(../images-all/products/tablet/ice-coffee@1x.png);
 
       @media (min-resolution: 2dppx),
-        (min-resolution: 192dpi),
-        (min-device-pixel-ratio: 2) {
+      (min-resolution: 192dpi),
+      (min-device-pixel-ratio: 2) {
         background-image: url(../images-all/products/tablet/ice-coffee@2x.png);
       }
     }
@@ -250,8 +250,8 @@
       background-image: url(../images-all/products/desctop/ice-coffee@1x.png);
 
       @media (min-resolution: 2dppx),
-        (min-resolution: 192dpi),
-        (min-device-pixel-ratio: 2) {
+      (min-resolution: 192dpi),
+      (min-device-pixel-ratio: 2) {
         background-image: url(../images-all/products/desctop/ice-coffee@2x.png);
       }
     }
@@ -265,8 +265,8 @@
     background-image: url(../images-all/products/mobile/milkshake@1x.png);
 
     @media (min-resolution: 2dppx),
-      (min-resolution: 192dpi),
-      (min-device-pixel-ratio: 2) {
+    (min-resolution: 192dpi),
+    (min-device-pixel-ratio: 2) {
       background-image: url(../images-all/products/mobile/milkshake@2x.png);
     }
   }
@@ -276,8 +276,8 @@
       background-image: url(../images-all/products/tablet/milkshake@1x.png);
 
       @media (min-resolution: 2dppx),
-        (min-resolution: 192dpi),
-        (min-device-pixel-ratio: 2) {
+      (min-resolution: 192dpi),
+      (min-device-pixel-ratio: 2) {
         background-image: url(../images-all/products/tablet/milkshake@2x.png);
       }
     }
@@ -288,8 +288,8 @@
       background-image: url(../images-all/products/desctop/milkshake@1x.png);
 
       @media (min-resolution: 2dppx),
-        (min-resolution: 192dpi),
-        (min-device-pixel-ratio: 2) {
+      (min-resolution: 192dpi),
+      (min-device-pixel-ratio: 2) {
         background-image: url(../images-all/products/desctop/milkshake@2x.png);
       }
     }
@@ -335,7 +335,7 @@
   font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.52;
+  line-height: 1.48;
   text-align: center;
   letter-spacing: 0.04em;
 
@@ -351,6 +351,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    line-height: 1.65;
     font-size: 16px;
     padding-left: 64px;
     padding-right: 63px;
@@ -358,10 +359,17 @@
   }
 }
 
+.card__text-mobile {
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 .card__button {
   position: absolute;
   left: 50%;
-  bottom: 32px;
+  bottom: 40px;
   transform: translateX(-50%);
 
   display: inline-block;
@@ -372,8 +380,12 @@
   border: none;
   border-radius: 50%;
   background-color: var(--dominant-text-color);
-
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    bottom: 60px;
+  }
+
 }
 
 .card__icon {
@@ -404,7 +416,7 @@
   }
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
