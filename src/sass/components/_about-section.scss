@@ -1,10 +1,11 @@
 .howe-it-background {
     background-repeat: no-repeat;
     background-color: #fff5f6;
-    background-position: 100% 595px;
+    
+    background-position: 100% 74%;
     background-size: 100%;
 
-    background-image: url(url(../images-all/how-it/how-it-fon-mob.png));
+    background-image: url(../images-all/how-it/how-it-fon-mob.png);
     @media screen and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -37,8 +38,6 @@
         }
     }
   }
-  
-
 .hawe-it-main-title {
     margin-bottom: 16px;
     font-family: Titan One;
