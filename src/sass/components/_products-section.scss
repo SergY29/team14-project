@@ -126,8 +126,6 @@
   &::before {
     content: '';
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
