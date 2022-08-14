@@ -148,17 +148,19 @@
   @media screen and (min-width: 768px) {
     right: 185px;
     top: 45px;
-    width: 335px;
+    width: 340px;
     height: 333px;
   }
   @media screen and (min-width: 1200px) {
     right: 149px;
     top: 54px;
-    width: 534px;
+    width: 540px;
     height: 534px;
     z-index: 1;
   }
 }
+
+
 .hero__ice-cream-pic {
   position: absolute;
   top: 92px;
@@ -322,7 +324,7 @@
     margin-bottom: 16px;
   }
   @media screen and(min-width: 1200px) {
-    width: 92px;
+    width: 74px;
     height: 77px;
   }
 }
