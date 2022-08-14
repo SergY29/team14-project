@@ -110,9 +110,6 @@
 }
 
 .have-about__list {
-
-
-
     font-weight: 500;
     font-size: 12px;
     line-height: 1.58;
@@ -127,6 +124,16 @@
       padding-right: 0;
 
   }
+}
+
+.have-about__picture {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+      justify-content: flex-start;
+    }
 }
 
 .have-about__list-img {
