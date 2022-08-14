@@ -1,0 +1,178 @@
+.reviews-section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+     padding-bottom: 40px;
+    }
+
+    @media screen and (min-width:1200px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+
+}
+
+.slider {
+  &__item {
+    width: 100%;
+
+    // outline: 1px solid red;
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__body:after {
+    content: '';
+    height: 4px;
+    width: 32px;
+    background-image: url(../images-all/after-dots.png);
+    background-size: cover;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    @include table {
+      margin-top: 4px;
+      margin-bottom: 24px;
+    }
+    @include desktop {
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__drope {
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 43px;
+    padding-bottom: 17px;
+    background-color: var(--slider__text);
+
+    @include mobile {
+      padding-left: 40px;
+      padding-right: 40px;
+      max-width: 400px;
+    }
+    @include table {
+      padding-left: 6px;
+      padding-right: 6px;
+      padding-bottom: 36px;
+      padding-top: 37px;
+      min-width: 620px;
+    }
+    @include desktop {
+      padding-left: 73px;
+      padding-right: 74px;
+      padding-bottom: 38px;
+      padding-top: 47px;
+      min-width: 968px;
+    }
+  }
+
+  &__img {
+    margin-bottom: 32px;
+
+    @include table {
+      margin-bottom: 20px;
+    }
+    @include desktop {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__gradient {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+
+    background-image: repeating-linear-gradient(
+      to bottom,
+      var(--slider__text),
+      var(--slider__text) 28px,
+      var(--quotes-color) 30px,
+      var(--quotes-color) 29px
+    );
+  }
+
+  &__text {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 8px;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    z-index: 2;
+
+    @include mobile {
+      padding-left: 37px;
+      padding-right: 30px;
+    }
+    @include table {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 515px;
+      font-size: 14px;
+      line-height: 216%;
+      letter-spacing: 0.04em;
+    }
+    @include desktop {
+      max-width: 750px;
+      font-size: 16px;
+      line-height: 190%;
+    }
+  }
+
+  &__text::before {
+    content: '';
+    position: absolute;
+    top: -15;
+    left: 3;
+    z-index: -1;
+    height: 40px;
+    width: 54px;
+    background-image: url(../images-all/before-object.png);
+    background-size: cover;
+
+    @include mobile {
+      height: 40px;
+      width: 60px;
+      top: -15;
+      left: 3;
+    }
+    @include table {
+      top: -18px;
+      left: 0px;
+    }
+    @include desktop {
+      height: 40px;
+      width: 54px;
+      top: -18px;
+      left: 0px;
+    }
+  }
+
+  &__city {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 186%;
+
+    @include table {
+      font-size: 16px;
+    }
+    @include desktop {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,273 @@
+.have__container {
+  @media (min-width: 768px) {
+    padding-left: 44px;
+    padding-right: 32px;
+  }
+
+    @media (min-width: 1200px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+}
+
+.have {
+  background-color: var(--backgroung-color);
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+      padding-bottom: 60px
+    }
+
+  @media screen and (min-width: 1200px) {
+    
+    padding-bottom: 40px
+  }
+}
+
+.have__container {
+    @media screen and (min-width: 1200px) {
+        background-repeat: no-repeat;
+        background-position: bottom ;
+        background-size: 100%;
+        background-image: url(../images-all/how-it/how-it-fon-desk.png);
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+          background-image: url(../images-all/how-it/how-it-fon-desk@2x.png);
+        }
+      }
+}
+
+.have__main {
+    margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+        margin-bottom: 40px;
+  }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 60px;
+    }
+}
+
+.have__title {
+  margin: 0 auto 16px auto;
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--title-accent-color);
+
+  @media screen and (min-width: 768px) {
+      font-size: 26px;
+      line-height: 1.15;
+  }
+
+  @media screen and (min-width: 1200px) {
+
+      font-size: 30px;
+      line-height: 1.13;
+      letter-spacing: 0.04em;
+
+  }
+}
+
+.have__title-second {
+  margin: 0 auto;
+  font-family: Titan One;
+
+  font-size: 34px;
+  line-height: 1.12;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+
+  @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: 1.15;
+  }
+
+  @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      line-height: 1.14;
+      letter-spacing: 0.06em;
+  }
+}
+
+
+.have-about__item {
+  @media screen and (min-width: 768px) {
+
+    display: flex;
+  }
+
+
+}
+
+.have-about__list {
+
+
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.58;
+
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+        font-size: 14px;
+          line-height: 1.78;
+          letter-spacing: 0.04em;
+      width: calc((100% - 24px) / 2);
+
+      padding-right: 0;
+
+  }
+}
+
+.have-about__list-img {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+
+}
+
+.have-about__list--special {
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+    flex-grow: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 463px;
+
+    margin-left: 99px;
+    margin-right: 105px;
+  }
+}
+
+.have-about__text {
+    padding-right: 60px;
+  color: var(--usual-text-color);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+    padding-right: 0;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 90px;
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+
+.have-about__description {
+    padding-right: 60px;
+    background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: url(../images-all/how-it/how-it-fon-mob.png);
+    
+      @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        background-image: url(../images-all/how-it/how-it-fon-mob@2x.png);
+      }
+    
+      @media screen and (min-width: 768px) {
+        background-image: none;
+        padding-right: 0;
+      }
+
+margin-top: -22px;
+  margin-bottom: 17px;
+  padding-top: 42px;
+  color: var(--alternative-text-color);
+
+  @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+      line-height: 1.92;
+      margin-bottom: 20px;
+  }
+}
+
+.tincidunt {
+  display: block;
+  @media screen and (min-width: 321px) {
+    display: inline;
+  }
+}
+
+.have-about__description--two {
+    padding-right: 60px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: var(--alternative-text-color);
+
+  @media screen and (min-width: 768px) {
+    padding-right: 0;
+      margin-bottom: 40px;
+      font-size: 14px;
+      line-height: 1.78;
+      letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1200px) {
+      line-height: 1.92;
+      margin-bottom: 40px;
+  }
+}
+
+.have-its-btn {
+  width: 176px;
+  height: 44px;
+  background: var(--dominant-text-color);
+  border: none;
+  border-radius: 22px;
+  padding-right: 37px;
+  padding-left: 37px;
+  justify-content: center;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--accent-text-color);
+
+  @include buttons(background-color);
+
+  @media screen and (min-width: 768px) {
+    .have-its-btn {
+      font-size: 16px;
+      line-height: 1.31;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    background-color: #ecebeb;
+  }
+}
+
+.ico-read-more {
+  margin-left: 10px;
+}

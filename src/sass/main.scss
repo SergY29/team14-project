@@ -4,8 +4,9 @@
 @import './utils/resets';
 @import './utils/mixins';
 @import './utils/hidden';
+@import './components/mixin';
 @import './utils/backdrop';
-
+@import './components/slick';
 @import './components/section';
 @import './layouts/container';
 
