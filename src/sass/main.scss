@@ -2,6 +2,7 @@
 @import './base/common';
 @import './base/base';
 @import './utils/resets';
+@import './utils/mixins';
 @import './utils/hidden';
 @import './components/mixin';
 @import './utils/backdrop';
@@ -18,4 +19,5 @@
 @import './components/gallery-section';
 @import './components/customer-reviews-section';
 @import './components/contacts-section';
+@import './components/modal-map';
 @import './components/footer-section';

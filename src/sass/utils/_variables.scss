@@ -42,23 +42,27 @@
   font-display: swap;
 }
 
-:root {
-  --primary-font-family: 'DM Sans';
-  --alternative-font-family: 'Titan One';
-  --accent-text-color: #d41443;
-  --dominant-text-color: #ffffff;
-  --alternative-text-color: #907e82;
-  --usual-text-color: #000000;
-  --accent-backgroung-color: #ffb8ca;
-  --title-accent-color: #ffa5ba;
-  --slider-color: #d31342;
-  --inactive-slider-color: #d9d9d9;
-  --agency-color: #f0d1a5;
-  --alternative-agency-color: #c2e297;
-  --quotes-color: #e1e1e1;
-  --point-review-color: #c7133e;
-  --sosials-inactive-color: #fea5bb;
-  --border-mobile-menu-color: #e18298;
-  --background-mobile-menu-color: #e17992;
-  --slider__text: #fafafa;
+:root{
+    --primary-font-family: 'DM Sans';
+    --alternative-font-family: 'Titan One';
+    --accent-text-color: #d41443;
+    --dominant-text-color: #ffffff;
+    --alternative-text-color: #907e82;
+    --usual-text-color: #000000;
+    --accent-backgroung-color: #ffb8ca;
+    --title-accent-color: #ffa5ba;
+    --slider-color: #d31342;
+    --inactive-slider-color: #d9d9d9;
+    --agency-color: #f0d1a5;
+    --alternative-agency-color: #c2e297;
+    --quotes-color: #e1e1e1;
+    --point-review-color: #c7133e;
+    --sosials-inactive-color: #fea5bb;
+    --backgroung-color: #fff5f6;
+    --border-mobile-menu-color: #e18298;
+    --background-mobile-menu-color: #e17992;
+    --button-hover-gray: #ecebeb;
+    --slider__text: #fafafa;
 }
+
+

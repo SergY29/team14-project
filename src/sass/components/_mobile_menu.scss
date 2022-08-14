@@ -8,6 +8,7 @@
   visibility: visible;
   background-color: var(--background-mobile-menu-color);
   transition: transform 250ms linear 250ms;
+  box-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
   @media screen and (min-width: 768px) {
     width: 254px;
     height: 100vh;
@@ -41,9 +42,12 @@
   margin-bottom: 20px;
   color: var(--accent-text-color);
   background-color: var(--dominant-text-color);
+
+  @include buttons (background-color);
+
   &:hover,
   &:focus {
-    background-color: var(--alternative-agency-color);
+    background-color: var(--button-hover-gray);
   }
   @media screen and (min-width: 768px) {
     width: 180px;
@@ -68,11 +72,17 @@
   font-size: 14px;
   line-height: 1.28;
   color: var(--dominant-text-color);
+  @include buttons (color);
+
   margin-left: 20px;
-  &:hover {
+
+  &:hover,
+  &:focus {
     color: var(--accent-text-color);
   }
   @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.31;
     margin-left: 0px;
   }
 }

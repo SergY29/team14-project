@@ -1,21 +1,36 @@
+.header-container {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+}
+
 .header {
-  background-color: var(--accent-backgroung-color);
   padding-top: 8px;
-  position: relative;
+  top: 0;
+  position: absolute;
+  width: 100%;
   overflow: hidden;
+  z-index: 11;
   @media screen and (min-width: 768px) {
     padding-top: 32px;
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 36px;
+    padding-top: 37px;
   }
-  .site-nav {
-    display: flex;
-    @media screen and (min-width: 1200px) {
-      justify-content: space-between;
-    }
+}
+
+.site-nav {
+  display: flex;
+}
+
+.logo {
+  @media screen and (min-width: 1200px) {
+    margin-right: 128px;
   }
-  .menu {
+}
+
+.menu {
     display: none;
     @media screen and (min-width: 1200px) {
       display: flex;
@@ -23,10 +38,9 @@
       align-items: center;
     }
   }
-}
+
 .burger {
-  border: none;
-  background-color: var(--accent-backgroung-color);
+  background-color: transparent;
   margin-left: auto;
   @media screen and (min-width: 1200px) {
     display: none;
@@ -43,14 +57,24 @@
   line-height: 1.31;
   color: var(--accent-text-color);
   background-color: var(--dominant-text-color);
+  
+  @include buttons(background-color);
+
   margin-left: 32px;
+
   &:hover,
   &:focus {
-    background-color: var(--alternative-agency-color);
+    background-color: var(--button-hover-gray);
+
   }
   @media screen and (min-width: 768px) {
     display: block;
   }
+
+    @media screen and (min-width: 1200px) {
+     margin-left: 141px;;
+    }
+
 }
 .icon-arrow {
   margin-left: 10px;

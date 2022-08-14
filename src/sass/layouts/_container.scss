@@ -8,7 +8,9 @@
     max-width: 768px;
   }
 
-  @media (min-width: 1200px) {
-    max-width: 1200px;
-  }
-}
+    @media (min-width: 1200px) {
+        max-width: 1200px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
