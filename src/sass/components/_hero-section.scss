@@ -1,119 +1,368 @@
 .hero {
-  padding-left: 20px;
-  padding-top: 194px;
+  background: var(--accent-backgroung-color);
+}
 
-
+.hero-container {
+  overflow: hidden;
   position: relative;
-    overflow: hidden;
   height: 502px;
-  margin: 0 auto;
-  background-color: var(--accent-backgroung-color);
-
-
-
+  display: flex;
   @media screen and (min-width: 768px) {
-    padding-left: 32px;
-
-      height: 416px;
-    }
+    height: 416px;
+    
+  }
 
   @media screen and (min-width: 1200px) {
     height: 664px;
-    }
-
+  }
 }
 
 
-.hero-picture {
-
-  background-color: var(--title-accent-color);
-  width: 346px;
-  height: 344px;
-  border-radius: 50%;
+.hero__group {
   position: absolute;
-  top: 83;
-  right: -62;
-
+  z-index: 10;
+  margin-top: 194px;
+  @media screen and (min-width: 768px) {
+    margin-top: 91px;
+  }
 }
 
 .hero__title {
-  max-width: 218px;
-  position: relative;
-
-
-  font-family: 'Titan One';
-    font-size: 26px;
-    line-height: 1.15;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-  color: var(--dominant-text-color);
+  
+  @media screen and (min-width: 768px) {
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 60px;
+  }
 }
 
-// .hero__title__word {
-//   font-size: 48px;
-//   line-height: 0.95;
-//   color: var(--accent-text-color);
-// }
+.hero__title--text {
+  width: 218px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--dominant-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: 1.136;
+    width: 162px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: 1.157;
+    width: 277px;
+  }
+}
+
+.hero__title__word {
+  letter-spacing: 0;
+  font-size: 48px;
+  line-height: 96.5%;
+  color: var(--accent-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 0.911;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 0.896;
+  }
+}
+
+.hero__title--list {
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.hero__title--button {
+  background-color: var(--accent-text-color);
+  height: 24px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  color: var(--dominant-text-color);
+  border: none;
+  border-radius: 20px;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.285;
+    height: 40px;
+  }
+  &:hover {
+    background-color: #ECEBEB;
+    color: var(--accent-text-color);
+  }
+  &:first-child {
+    margin-right: 8px;
+  }
+}
+
+.hero__title--white {
+  background-color: #FFFFFF;
+  color: #D41443;
+
+  
+}
+
+
+.hero__icon {
+  fill: #ffa5ba;
+  position: absolute;
+  right: -62px;
+  top: 83px;
+  width: 346px;
+  height: 344px;
+  @media screen and (min-width: 768px) {
+    right: 185px;
+    top: 45px;
+    width: 335px;
+    height: 333px;
+  }
+  @media screen and (min-width: 1200px) {
+    right: 149px;
+    top: 54px;
+    width: 534px;
+    height: 534px;
+    z-index: 1;
+  }
+}
+.hero__ice-cream-pic {
+  position: absolute;
+  top: 92px;
+  right: 32px;
+  z-index: 2;
+  @media screen and (min-width: 768px) {
+    top: 82px;
+    right: 303px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 108px;
+    right: 328px;
+  }
+}
+
+.hero__glass {
+  position: absolute;
+    top: 245px;
+  @media screen and(max-width: 767.5px) {
+    display: none;
+  }
+  
+  @media screen and(min-width: 1200px) {
+    top: 388px;
+    
+  }
+  
+}
+
+.hero__info {
+  
+  position: absolute;
+  z-index: 2;
+  top: 286px;
+  left: 184px;
+  width: 114px;
+  @media screen and(max-width: 767.5px) {
+    display: none;
+  }
+
+  
+
+  @media screen and(min-width: 1200px) {
+    width: 200px;
+    left: 229px;
+    top: 456px;
+  }
+}
+
+.hero_info--text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.428;
+    
+  }
+}
+
+.hero__info--btn {
+  margin-top: 7px;
+  width: 18px;
+  height: 18px;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    width: 26px;
+    height: 26px;
+    margin-top: 23px;
+  }
+}
+
+.hero__info--icon {
+  
+  width: 6px;
+  height: 6px;
+  fill: #D41443;
+  @media screen and (min-width: 1200px) {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.hero__girl {
+  z-index: 2;
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+  position: absolute;
+  right: 32px;
+  top: 267px;
+  @media screen and (min-width: 1200px){
+    right: 16px;
+    top: 423px;
+  }
+}
+
+
+.hero__info {
+  @media screen and(max-width: 767.5px) {
+    display: none;
+  }
+  
+  
+}
+
+.hero__info--number {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.142;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+}
+
+.hero__info--text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: #FFFFFF;
+}
+
+.hero__static {
+  position: absolute;
+  z-index: 2;
+  top: 92px;
+  right: 32px;
+  @media screen and(max-width: 767.5px) {
+    display: none;
+  }
+  
+
+  @media screen and(min-width: 1200px) {
+    top: 152px;
+    right: 16px;
+  }
+
+}
 
 
 
+.hero__static--element {
+  width: 43px;
+  height: 43px;
+  position: relative;
+  &:first-child {
+    margin-bottom: 16px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 92px;
+    height: 77px;
+  }
+}
+.hero__static--number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.142;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-text-color);
+  @media screen and(min-width: 1200px) {
+    font-size: 46px;
+    line-height: 1.152;
+  }
+}
 
+.hero__static--text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  color: #FFFFFF;
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
 
+.hero__static--cafe {
+  right: 10px;
+  @media screen and (min-width: 1200px){
+    right: 18px;
+  }
+}
 
+.hero__static--icon {
+  position: absolute;
+  
+  right: -10px;
+  top: -2px;
+  z-index: 1;
+}
 
-
-
-
-// .hero__wrap {
-//   display: flex;
-// }
-
-
-
-// .hero__title--button {
-//   display: inline-flex;
-//   margin-top: 20px;
-// }
-// .hero__title__button:first-child {
-//   margin-right: 8px;
-// }
-// .hero__title__button {
-//   background-color: var(--accent-text-color);
-//   height: 24px;
-//   padding-left: 15px;
-//   padding-right: 15px;
-//   font-weight: 400;
-//   font-size: 8px;
-//   line-height: 1.25;
-//   color: var(--dominant-text-color);
-//   border: none;
-//   border-radius: 20px;
-// }
-// .hero__title__button:hover {
-//   background-color: var(--dominant-text-color);
-//   color: var(--accent-text-color);
-// }
-
-// .hero__ice-cream {
-//   margin-top: 34px;
-//   margin-left: auto;
-//   @media screen and (min-width: 767px) {
-//   }
-// }
-// .hero__title__wrap {
-//   position: absolute;
-//   margin-top: 136px;
-//   z-index: 10;
-//   @media screen and (min-width: 768px) {
-//     margin-top: 20px;
-//   }
-// }
-// .hero__circle {
-//   right: 0px;
-//   position: absolute;
-//   top: 82px;
-// }
-// .hero__ice-cream-pic {
-//   position: relative;
-//   margin-right: 20px;
-// }
+.hero__static--icon {
+  
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  fill: #FFFFFF;
+  width: 16px;
+  height: 16px;
+  @media screen and(min-width: 1200px) {
+    width: 30px;
+    height: 30px;
+  }
+}
