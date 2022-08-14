@@ -3,6 +3,10 @@
     padding-left: 32px;
     padding-right: 34px;
   }
+  @media (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
 }
 
@@ -90,7 +94,7 @@
 .have-it-item {
   background-repeat: no-repeat;
 
-  background-position: 100% 66%;
+  background-position: 100% 73%;
   background-size: 100%;
 
   background-image: url(../images-all/how-it/how-it-fon-mob.png);
@@ -112,8 +116,6 @@
   @media screen and (min-width: 1200px) {
     & {
       background-position: 100% -30%;
-
-
 
       background-image: url(../images-all/how-it/how-it-fon-desk.png);
 
@@ -151,7 +153,6 @@
     margin-right: 105px;
   }
 }
-
 
 .have-it-text {
   margin-bottom: 26px;
@@ -207,8 +208,8 @@
 
   @media screen and (min-width: 1200px) {
     & {
-      line-height: 1.92;
       margin-bottom: 20px;
+      line-height: 1.92;
     }
   }
 }
@@ -246,9 +247,6 @@
   background: var(--dominant-text-color);
   border: none;
   border-radius: 22px;
-  // margin-bottom: 39px;
-  // margin-left: auto;
-  // margin-right: auto;
   padding-right: 37px;
   padding-left: 37px;
   justify-content: center;
@@ -263,7 +261,7 @@
   text-align: center;
   color: var(--accent-text-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include buttons(background-color);
 
   @media screen and (min-width: 768px) {
     .have-its-btn {
