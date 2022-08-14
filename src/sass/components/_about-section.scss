@@ -20,8 +20,25 @@
     }
 
   @media screen and (min-width: 1200px) {
+    
     padding-bottom: 40px
   }
+}
+
+.have__container {
+    @media screen and (min-width: 1200px) {
+        background-repeat: no-repeat;
+        background-position: bottom ;
+        background-size: 100%;
+        background-image: url(../images-all/how-it/how-it-fon-desk.png);
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+          background-image: url(../images-all/how-it/how-it-fon-desk@2x.png);
+        }
+      }
 }
 
 .have__main {
@@ -90,24 +107,12 @@
     display: flex;
   }
 
-  @media screen and (min-width: 1200px) {
-      background-repeat: no-repeat;
-      background-position: 100% -30%;
-        background-size: 100%;
-      background-image: url(../images-all/how-it/how-it-fon-desk.png);
 
-      @media screen and (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-          background-image: url(../images-all/how-it/how-it-fon-desk@2x.png);
-      }
-  }
 }
 
 .have-about__list {
 
-  padding-right: 60px;
+
 
     font-weight: 500;
     font-size: 12px;
@@ -125,6 +130,15 @@
   }
 }
 
+.have-about__list-img {
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+
+}
+
 .have-about__list--special {
   @media screen and (min-width: 768px) {
     margin-left: 20px;
@@ -140,10 +154,12 @@
 }
 
 .have-about__text {
+    padding-right: 60px;
   color: var(--usual-text-color);
 
   @media screen and (min-width: 768px) {
     margin-bottom: 20px;
+    padding-right: 0;
 
   }
 
@@ -156,6 +172,7 @@
 }
 
 .have-about__description {
+    padding-right: 60px;
     background-repeat: no-repeat;
       background-size: 100%;
       background-image: url(../images-all/how-it/how-it-fon-mob.png);
@@ -169,6 +186,7 @@
     
       @media screen and (min-width: 768px) {
         background-image: none;
+        padding-right: 0;
       }
 
 margin-top: -16px;
@@ -195,6 +213,7 @@ margin-top: -16px;
 }
 
 .have-about__description--two {
+    padding-right: 60px;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
@@ -202,6 +221,7 @@ margin-top: -16px;
   color: var(--alternative-text-color);
 
   @media screen and (min-width: 768px) {
+    padding-right: 0;
       margin-bottom: 40px;
       font-size: 14px;
       line-height: 1.78;
