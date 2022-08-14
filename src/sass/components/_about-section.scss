@@ -131,9 +131,16 @@
 
 .have-about__list-img {
   margin-bottom: 40px;
-
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
   @media screen and (min-width: 768px) {
+    
       margin-bottom: 0;
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
     }
 
 }
