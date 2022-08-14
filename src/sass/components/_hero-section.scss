@@ -84,37 +84,58 @@
   margin-top: 20px;
 }
 
-.hero__title--button {
-  background-color: var(--accent-text-color);
-  height: 24px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-weight: 400;
-  font-size: 8px;
-  line-height: 1.25;
-  color: var(--dominant-text-color);
-  border: none;
-  border-radius: 20px;
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-    line-height: 1.285;
-    height: 40px;
-  }
-  &:hover {
+.hero__button {
+      background-color: var(--accent-text-color);
+        font-size: 8px;
+        line-height: 1.2;
+        color: var(--dominant-text-color);
+        font-weight: 400;
+    border-radius: 20px;
+  
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.285;
+    }
+  
+    &:hover {
     background-color: #ECEBEB;
     color: var(--accent-text-color);
-  }
-  &:first-child {
-    margin-right: 8px;
-  }
+    }
+  
+    &:first-child {
+      margin-right: 9px;
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 12px;
+      }
+   
+    }
 }
 
-.hero__title--white {
+.hero-link {
+  display: block;
+  padding: 7px 14px;
+
+  @media screen and (min-width: 1200px) {
+      padding: 11px 23px;
+    }
+}
+
+.hero-link--white {
+  @media screen and (min-width: 1200px) {
+      padding: 11px 20.5px;
+    }
+
+}
+
+
+.hero__button--white{
   background-color: #FFFFFF;
-  color: #D41443;
+    color: #D41443;
 
   
 }
+
 
 
 .hero__icon {
