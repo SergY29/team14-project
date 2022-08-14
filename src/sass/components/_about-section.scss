@@ -2,14 +2,52 @@
     padding-left: 20px;
     padding-right: 20px;
     background-color: #fff5f6;
+
     @media screen and (min-width: 768px) {
       padding-left: 0;
     padding-right: 0;
     }
   }
-.hawe-it {
-  
-}  
+.it-background {
+  background-repeat: no-repeat;
+    
+    background-position: 100% 66%;
+    background-size: 100%;
+
+    background-image: url(../images-all/how-it/how-it-fon-mob.png);
+    @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+        & {
+          background-image: url(../images-all/how-it/how-it-fon-desk@2x.png);
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        background-image: none;
+      }
+
+      @media screen and (min-width: 1200px) {
+        & {
+          background-position: 100% -30%;
+          max-width: 1200px;
+          margin-right: auto;
+          margin-left: auto;
+
+          background-image: url(../images-all/how-it/how-it-fon-desk.png);
+          @media screen and (min-device-pixel-ratio: 2),
+          (-webkit-min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+              & {
+                background-image: url(../images-all/how-it/how-it-fon-desk@2x.png);
+              }
+          }
+        }
+    }
+
+} 
 .hawe-it-main-title {
     margin-bottom: 16px;
     font-family: Titan One;
@@ -77,49 +115,11 @@
     }
 }
 .hawe-it-item {
-  background-repeat: no-repeat;
-    
-    background-position: 100% 66%;
-    background-size: 100%;
-
-    background-image: url(../images-all/how-it/how-it-fon-mob.png);
-    @media screen and (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-        & {
-          background-image: url(../images-all/how-it/how-it-fon-desk@2x.png);
-        }
-      }
-
-      @media screen and (min-width: 768px) {
-        background-image: none;
-        display: flex;
-      }
-
-      @media screen and (min-width: 1200px) {
-        & {
-          background-position: 100% -30%;
-          max-width: 1200px;
-          margin-right: auto;
-          margin-left: auto;
-
-          background-image: url(../images-all/how-it/how-it-fon-desk.png);
-          @media screen and (min-device-pixel-ratio: 2),
-          (-webkit-min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
-              & {
-                background-image: url(../images-all/how-it/how-it-fon-desk@2x.png);
-              }
-          }
-        }
+    @media screen and (min-width: 768px) {
+    & {
+      display: flex;
     }
-  //   @media screen and (min-width: 768px) {
-  //   & {
-  //     display: flex;
-  //   }
-  // }
+  }
 }
 .hawe-it-list {
   
