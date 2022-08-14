@@ -5,7 +5,7 @@ $(function () {
     arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
-    // fade: true,
-    // cssEase: 'linear',
+    fade: true,
+    cssEase: 'linear',
   });
 });
