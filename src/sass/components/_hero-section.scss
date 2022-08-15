@@ -85,14 +85,18 @@
 }
 
 .hero__button {
-      background-color: var(--accent-text-color);
-        font-size: 8px;
-        line-height: 1.2;
-        color: var(--dominant-text-color);
-        font-weight: 400;
-    border-radius: 20px;
+  display: block;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.2;
+  padding: 7px 14px;
+  border-radius: 20px;
+  color: var(--dominant-text-color);
+  background-color: var(--accent-text-color);
+
   
     @media screen and (min-width: 1200px) {
+      padding: 11px 23px;
       font-size: 14px;
       line-height: 1.285;
     }
@@ -108,35 +112,16 @@
     @media screen and (min-width: 1200px) {
         margin-right: 12px;
       }
-   
     }
 }
-
-.hero-link {
-  display: block;
-  padding: 7px 14px;
-
-  @media screen and (min-width: 1200px) {
-      padding: 11px 23px;
-    }
-}
-
-.hero-link--white {
-  @media screen and (min-width: 1200px) {
-      padding: 11px 20.5px;
-    }
-
-}
-
 
 .hero__button--white{
   background-color: #FFFFFF;
     color: #D41443;
-
-  
+    @media screen and (min-width: 1200px) {
+        padding: 11px 20.5px;
+      }
 }
-
-
 
 .hero__icon {
   fill: #ffa5ba;
