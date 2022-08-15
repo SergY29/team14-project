@@ -114,8 +114,7 @@
             border-radius: 50%;
             background-color: var(--sosials-inactive-color);
             margin-right: 28px;
-            width: 32px;
-            height: 32px;
+            
 
 
             &:last-child {
@@ -135,13 +134,17 @@
         }
 
         &__linc {
+            width: 34px;
+                height: 34px;
             display: flex;
-            height: 32px;
             align-items: center;
+
         }
 
         &__icon {
-            fill: var(--dominant-text-color)
+            fill: var(--dominant-text-color);
+            margin: 0 auto;
+
         }
     }
 
