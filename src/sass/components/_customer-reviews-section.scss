@@ -31,7 +31,7 @@
     content: '';
     height: 4px;
     width: 32px;
-    background-image: url(../images/customer-reviews/after-dots.png);
+    background-image: url(../images-all/after-dots.png);
     background-size: cover;
     align-items: center;
     margin-top: 16px;
@@ -141,7 +141,7 @@
     z-index: -1;
     height: 40px;
     width: 54px;
-    background-image: url(../images/customer-reviews/scroll-home.svg);
+    background-image: url(../images-all/before-object.png);
     background-size: cover;
 
     @include mobile {
