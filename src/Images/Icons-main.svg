@@ -1,28 +1,24 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<!-- Хедер иконки -->
+<!-- Heder icons -->
 <symbol id="icon-Burger" viewBox="0 0 46 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714"></path>
 </symbol>
 <symbol id="close-menu" viewBox="0 0 32 32">
 <path fill="none" stroke="#fff" style="stroke: var(--color2, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
 </symbol>
-
 <symbol id="icon-buy-arrow" viewBox="0 0 26 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.52 3.2l16.832 12.8-16.8 12.8"></path>
 </symbol>
-
 <!-- Hero icons -->
 <symbol id="icon-ellipse-hero" viewBox="0 0 32 32">
 <path  d="M32.192 16c0 8.837-7.206 16-16.096 16s-16.096-7.163-16.096-16c0-8.837 7.206-16 16.096-16s16.096 7.163 16.096 16z"></path>
 </symbol>
-
 <!-- Products icons -->
 <symbol id="icon-arrow" viewBox="0 0 32 32">
 <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
 </symbol>
-
-<!-- Modal icons -->
+<!-- Modal products icons -->
 <symbol id="icon-close" viewBox="0 0 32 32">
 <path d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
 </symbol>
@@ -35,6 +31,15 @@
 <symbol id="icon-email" viewBox="0 0 32 32">
 <path d="M26.667 5.333h-21.333c-1.467 0-2.652 1.2-2.652 2.667l-0.014 16c0 1.467 1.2 2.667 2.667 2.667h21.333c1.467 0 2.667-1.2 2.667-2.667v-16c0-1.467-1.2-2.667-2.667-2.667zM26.133 11.001l-9.426 5.892c-0.201 0.126-0.446 0.2-0.708 0.2s-0.506-0.075-0.713-0.204l0.006 0.003-9.426-5.892c-0.336-0.201-0.557-0.562-0.557-0.975 0-0.625 0.507-1.132 1.132-1.132 0.233 0 0.449 0.070 0.629 0.19l-0.004-0.003 8.933 5.586 8.933-5.588c0.176-0.118 0.392-0.188 0.624-0.188 0.625 0 1.132 0.507 1.132 1.132 0 0.413-0.221 0.775-0.552 0.972l-0.005 0.003z"></path>
 </symbol>
-
+<!-- contacts section icon -->
+<symbol id="icon-arrow--red" viewBox="0 0 22 32">
+    <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.559 3.205l13.724 12.82-13.724 12.82"></path>
+</symbol>
+<symbol id="icon-arrow-wite" viewBox="0 0 22 32">
+    <path fill="none" stroke="#d41443" style="stroke: var(--color1, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M4.559 3.205l13.724 12.82-13.724 12.82"></path>
+</symbol>
+ <symbol id="icon-close_40px-1" viewBox="0 0 32 32">
+    <path d="M23.743 10.308l-1.505-1.505-5.966 5.965-5.965-5.965-1.505 1.505 5.965 5.965-5.965 5.966 1.505 1.505 5.965-5.966 5.966 5.966 1.505-1.505-5.966-5.966 5.966-5.965z"></path>
+</symbol>
 </defs>
 </svg>
