@@ -1,12 +1,12 @@
-<div data-modal-2 class="backdrop-how is-hidden">
+<div data-modal-how class="backdrop-how is-hidden">
     <div class="modal-how">
-        <button type="button" class="modal-how__close-btn" data-modal-2-close>
+        <button type="button" class="modal-how__close-btn" data-modal-how-close>
             <svg class="modal__close-icon" width="20" height="20">
                 <use href="/src/images/sprite.svg#icon-close"></use>
             </svg>
         </button>
         <div class="modal-how__wrap">
-            <h2 class="modal-how__title">So How?</h2>
+            <p class="modal-how__title">So How?</p>
             <p class="modal-how__text">
                 You might know IceCream for our chunks and swirls,
                 but you might not know everything that goes in to how we make
@@ -17,18 +17,18 @@
             <div class="picture-conntainer"> 
                 <picture class="modal-cow-img">
                     <source srcset="
-                                    ./images/how/cow-milk-modal-desc.png 1x, 
-                                    ./images/how/cow-milk-modal-desc-2x.png 2x
+                                    ./images/how/milk-modal-desc.png 1x, 
+                                    ./images/how/milk-modal-desc-2x.png 2x
                                     " media="(min-width: 1200px)">
                     <source srcset="
-                                    ./images/how/cow-milk-modal-tab.png 1x, 
-                                    ./images/how/cow-milk-modal-tab-2x.png 2x
+                                    ./images/how/milk-modal-tab.png 1x, 
+                                    ./images/how/milk-modal-tab-2x.png 2x
                                     " media="(min-width: 768px)">
                     <source srcset="
-                                    ./images/how/cow-milk-modal-mob.png 1x, 
-                                    ./images/how/cow-milk-modal-mob-2x.png 2x
+                                    ./images/how/milk-modal-mob.png 1x, 
+                                    ./images/how/milk-modal-mob-2x.png 2x
                                     " media="(min-width: 320px)">
-                    <img src="./images/how/cow-milk-modal-mob.png" alt="Корова и молоко" class="how-list__img">
+                    <img src="./images/how/milk-modal-mob.png" alt="Корова и молоко" class="how-list__img">
                 </picture>
             </div>
             <p class="modal-how__text">
@@ -37,31 +37,44 @@
                 that sell their raw milk to the St. Albans Cooperative Creamery in St. Albans, Vermont.
                 Learn more about Caring Dairy!
             </p>
-            <h2 class="modal-how-bottom-title">Learn more !</h2>
-            
-            <ul class="modal-how-social-list">
-                <li class="modal-how-social-list__item">
-                    <a href="" class="social__link">
-                        <svg class="social__icon" width="34" height="34">
-                            <use href="/src/images/sprite.svg#icon-github"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="modal-how-social-list__item">
-                    <a href="" class="social__link">
-                        <svg class="social__icon" width="34" height="34">
-                            <use href="/src/images/sprite.svg#icon-telegram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="modal-how-social-list__item">
-                    <a href="" class="social__link">
-                        <svg class="social__icon" width="10" height="20">
-                            <use href="/src/images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+            <p class="modal-how-bottom-title">Learn more !</p>
+            <div class="bottom-milk-contacts">
+                <div class="form__field">
+                    <label class="form__label" for="mail">Email</label>
+                    <input class="form__input" type="email" name="mail" id="mail" />
+                    <svg class="form__icon" width="18" height="18" aria-label="email">
+                        <use href="/src/images/sprite.svg#icon-email"></use>
+                    </svg>
+                </div>
+
+                <div>
+                    <a href="" class="button milk-subscribe-btn">Subscribe</a>
+                </div>
+                
+                <ul class="modal-how-social-list">
+                    <li class="modal-how-social-list__item">
+                        <a href="" class="social__link">
+                            <svg class="social__icon" width="34" height="34">
+                                <use href="/src/images/sprite.svg#icon-github"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="modal-how-social-list__item">
+                        <a href="" class="social__link">
+                            <svg class="social__icon" width="34" height="34">
+                                <use href="/src/images/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="modal-how-social-list__item">
+                        <a href="" class="social__link">
+                            <svg class="social__icon" width="10" height="20">
+                                <use href="/src/images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
