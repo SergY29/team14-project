@@ -2,8 +2,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 250px;
-  height: 504px;
+  width: 100%;
+  height: 100%;
   opacity: 1;
   visibility: visible;
   background-color: var(--background-mobile-menu-color);
@@ -11,7 +11,6 @@
   box-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
   @media screen and (min-width: 768px) {
     width: 254px;
-    height: 100vh;
   }
   @media screen and (min-width: 1200px) {
     display: none;
@@ -43,7 +42,7 @@
   color: var(--accent-text-color);
   background-color: var(--dominant-text-color);
 
-  @include buttons (background-color);
+  @include buttons(background-color);
 
   &:hover,
   &:focus {
@@ -72,7 +71,7 @@
   font-size: 14px;
   line-height: 1.28;
   color: var(--dominant-text-color);
-  @include buttons (color);
+  @include buttons(color);
 
   margin-left: 20px;
 
