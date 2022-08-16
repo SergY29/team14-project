@@ -18,11 +18,11 @@
   overflow-y: scroll;
 
   &.is-hidden {
-      opacity: 0;
-      pointer-events: none;
-      visibility: hidden;
-      transform: scale(0.5);
-    }
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: scale(0.5);
+  }
 
   @media (min-width: 768px) {
     padding: 94px 15px 94px 15px;
@@ -30,7 +30,7 @@
 }
 
 .modal__map {
-  position: relative;
+  position: relative;  
   padding: 40px 15px 40px 15px;
 
   top: 50%;
@@ -41,10 +41,7 @@
   border-radius: 4px;
 
   max-width: 680px;
-  height: 530px;
-
-  
-
+ 
     opacity: 1;
     visibility: visible;
     background-color: var(--backgroung-color);
@@ -110,3 +107,5 @@
     background-color: var(--button-hover-gray);
   }
 }
+
+
