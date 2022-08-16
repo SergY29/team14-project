@@ -17,7 +17,7 @@
 }
 
 .modal-how {
-  padding-top: 30px;
+  padding-top: 40px;
   min-width: 280px;
   //   width: 600px;
   max-height: 620px;
@@ -32,14 +32,40 @@
 }
 
 .modal-how__close-btn {
-  border: none;
-  background-color: transparent;
-  top: 5px;
-  right: 10px;
+  //   width: 30px;
+  //   height: 30px;
+  //   //   border: none;
+  //   border: 1px solid rgba(0, 0, 0, 0.1);
+  //   border-radius: 50%;
+  //   //   z-index: 20;
+  //   background-color: transparent;
+  //   top: 5px;
+  //   right: 10px;
+  //   position: absolute;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   cursor: pointer;
   position: absolute;
+  right: 5px;
+  top: 5px;
+
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+
+  color: black;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   cursor: pointer;
+
+  z-index: 20;
 }
 
 .modal-how__wrap {
@@ -105,6 +131,10 @@
   background-color: var(--sosials-inactive-color);
   width: 34px;
   height: 34px;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-text-color);
+  }
 }
 
 .modal-how-social-list__item + .modal-how-social-list__item {
