@@ -5,12 +5,12 @@
         <picture>
           <source
             srcset="
-              /src/images-all/Logo_199.png 1x,
-              /src/images-all/Logo_398.png 2x
+              /src/images/head/logo-smal.png 1x,
+              /src/images/head/logo-big.png  2x
             "
             type="image/png"
           />
-          <img src="/src/images-all/Logo_199.png" alt="Logo" width="199" />
+          <img src="/src/images/head/logo-smal.png" alt="Logo" width="199" />
         </picture>
       </a>
       <ul class="menu">
@@ -27,13 +27,13 @@
         data-mobile-menu-open
       >
         <svg width="20" height="12">
-          <use href="/Icons/Icons.svg#icon-Burger"></use>
+          <use href="/src/images/sprite.svg#burger"></use>
         </svg>
       </button>
-      <button class="button button-tablet" type="button">
+      <button data-modal-open class="button button-tablet" type="button">
         Buy now
         <svg class="icon-arrow" width="6" height="8">
-          <use href="/Icons/Icons.svg#icon-buy-arrow"></use>
+          <use href="/src/images/sprite.svg#icon-buy-arrow"></use>
         </svg>
       </button>
       <div class="backdrop is-hidden" data-mobile-menu>
@@ -46,15 +46,15 @@
               data-mobile-menu-close
             >
               <svg width="14" height="14">
-                <use href="/Icons/Icons.svg#close-menu"></use>
+                <use href="/src/images/sprite.svg#close-menu"></use>
               </svg>
             </button>
           </div>
           <div class="buy-wrap">
-            <button class="buy-btn" type="button">
+            <button data-modal-mobile-open class="buy-btn" type="button">
               Buy now
               <svg class="icon-arrow" width="6" height="8">
-                <use href="/Icons/Icons.svg#icon-buy-arrow"></use>
+                <use href="/src/images/sprite.svg#icon-buy-arrow"></use>
               </svg>
             </button>
           </div>
@@ -92,19 +92,12 @@
         </h1>
         <ul class="hero__title--list">
           <li>
-            <button class="button hero__button" type="button">
-              <a href="#products" class="hero-link">Products</a>
-            </button>
+            <a class="button hero__button" href="#products">Products</a>
           </li>
           <li>
-            <button
-              class="button hero__button hero__button--white"
-              type="button"
+            <a class="button hero__button hero__button--white" href="#how-made"
+              >How it’s made?</a
             >
-              <a href="#how-made" class="hero-link hero-link--white"
-                >How it’s made?</a
-              >
-            </button>
           </li>
         </ul>
       </div>
@@ -112,16 +105,16 @@
     <picture>
       <source
         srcset="
-          /src/images-all/milk-glass-1200@1x.png 1x,
-          /src/images-all/milk-glass-1200@2x.png 2x
+          /src/images/heroes/milk-glass-1200@1x.png 1x,
+          /src/images/heroes/milk-glass-1200@2x.png 2x
         "
         media="(min-width: 1200px)"
         type="image/webp"
       />
       <source
         srcset="
-          /src/images-all/milk-glass@1x.png 1x,
-          /src/images-all/milk-glass@2x.png 2x
+          /src/images/heroes/milk-glass@1x.png 1x,
+          /src/images/heroes/milk-glass@2x.png 2x
         "
         media="(min-width: 768px)"
         type="image/webp"
@@ -129,7 +122,7 @@
 
       <img
         class="hero__glass"
-        src="/src/images-all/milk-glass@1x.png"
+        src="/src/images/heroes/milk-glass@1x.png "
         alt="кувшин с молоком"
       />
     </picture>
@@ -141,29 +134,29 @@
       </p>
       <button type="button" class="hero__info--btn">
         <svg class="hero__info--icon">
-          <use href="/Icons/Icons.svg#icon-arrow"></use>
+          <use href="/src/images/sprite.svg#icon-arrow"></use>
         </svg>
       </button>
     </div>
 
     <div class="hero__ice-cream">
       <svg class="hero__icon">
-        <use href="/Icons/Icons.svg#icon-ellipse-hero"></use>
+        <use href="/src/images/sprite.svg#icon-ellipse-hero"></use>
       </svg>
 
       <picture>
         <source
           srcset="
-            /src/images-all/hero-ice-cream-1200.png,
-            /src/images-all/hero-ice-cream-1200@2x.png 2x
+            /src/images/heroes/hero-ice-cream-1200.png,
+            /src/images/heroes/hero-ice-cream-1200@2x.png 2x
           "
           media="(min-width: 1200px)"
           type="image/webp"
         />
         <source
           srcset="
-            /src/images-all/hero-ice-cream-768.png    1x,
-            /src/images-all/hero-ice-cream-768@2x.png 2x
+            /src/images/heroes/hero-ice-cream-768.png    1x,
+            /src/images/heroes/hero-ice-cream-768@2x.png 2x
           "
           media="(min-width: 768px)"
           type="image/webp"
@@ -172,10 +165,10 @@
         <img
           class="hero__ice-cream-pic"
           srcset="
-            /src/images-all/hero-ice-cream.png    1x,
-            /src/images-all/hero-ice-cream@2x.png 2x
+            /src/images/heroes/hero-ice-cream.png    1x,
+            /src/images/heroes/hero-ice-cream@2x.png 2x
           "
-          src="/src/images-all/hero-ice-cream.png"
+          src="/src/images/heroes/hero-ice-cream.png"
           alt="мороженое"
         />
       </picture>
@@ -183,16 +176,16 @@
     <picture>
       <source
         srcset="
-          /src/images-all/girl-hero-1200.png    1x,
-          /src/images-all/girl-hero-1200@2x.png 2x
+          /src/images/heroes/girl-desk.png    1x,
+          /src/images/heroes/girl-desk@2x.png 2x
         "
         media="(min-width: 1200px)"
         type="image/webp"
       />
       <source
         srcset="
-          /src/images-all/girl-hero.png    1x,
-          /src/images-all/girl-hero@2x.png 2x
+          /src/images/heroes/girl.png    1x,
+          /src/images/heroes/girl@2x.png 2x
         "
         media="(min-width: 768px)"
         type="image/webp"
@@ -200,7 +193,7 @@
 
       <img
         class="hero__girl"
-        src="/src/images-all/girl-hero.png"
+        src="/src/images/heroes/girl.png"
         alt="девушка с мороженым"
       />
     </picture>
@@ -211,14 +204,14 @@
           <p class="hero__static--number">16</p>
           <p class="hero__static--text hero__static--cafe">cafes</p>
           <svg class="hero__static--icon">
-            <use href="/Icons/Icons.svg#icon-ellipse-hero"></use>
+            <use href="/src/images/sprite.svg#icon-ellipse-hero"></use>
           </svg>
         </li>
         <li class="hero__static--element">
           <p class="hero__static--number">23</p>
           <p class="hero__static--text">food trucks</p>
           <svg class="hero__static--icon">
-            <use href="/Icons/Icons.svg#icon-ellipse-hero"></use>
+            <use href="/src/images/sprite.svg#icon-ellipse-hero"></use>
           </svg>
         </li>
       </ul>
