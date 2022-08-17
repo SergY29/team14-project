@@ -7,14 +7,21 @@
   background: rgba(227, 129, 236, 0.3);
   z-index: 99;
   overflow: scroll;
-  transition: opacity 200ms linear;
 
-  
+  opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition-property: opacity, transform, visibility;
+    transition-duration: 400ms;
+    transition-timing-function: earse;
+
+
 }
 .backdrop.is-hidden {
   opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+    pointer-events: none;
+    visibility: hidden;
+    transform: scale(0.5);
 }
 .backdrop.is-hidden .mobile-menu {
   transform: translate(+100%, 0%);
@@ -29,7 +36,11 @@
   background: rgba(227, 129, 236, 0.3);
   z-index: 99;
   overflow: scroll;
-  transition: opacity 200ms linear;
+  transform: scale(1);
+    transition-property: transform, visibility;
+        transition-duration: 400ms;
+          transition-timing-function: earse;
+  
 
   @media screen and (min-width: 1200px) {
     opacity: 0;
@@ -40,8 +51,9 @@
 }
 
 .backdrop-mobile.is-open {
-  opacity: 0;
-  visibility: hidden;
+opacity: 0;
   pointer-events: none;
+  visibility: hidden;
+  transform: scale(0.5);
 }
 
