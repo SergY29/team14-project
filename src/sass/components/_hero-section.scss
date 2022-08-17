@@ -7,6 +7,11 @@
   position: relative;
   height: 502px;
   display: flex;
+  width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+          margin: 0 auto;
+          max-width: 768px;
   @media screen and (min-width: 768px) {
     padding-left: 32px;
     padding-right: 32px;
@@ -14,6 +19,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+          max-width: 1200px;
     padding-left: 16px;
     padding-right: 16px;
     height: 664px;
