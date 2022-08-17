@@ -8,6 +8,8 @@
   z-index: 99;
   overflow: scroll;
   transition: opacity 200ms linear;
+
+  
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -18,7 +20,7 @@
   transform: translate(+100%, 0%);
 }
 
-.backdrop {
+.backdrop-mobile {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,14 +32,12 @@
   transition: opacity 200ms linear;
 
   @media screen and (min-width: 1200px) {
-      opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
+     display: none;
     }
 
 }
 
-.backdrop.is-open {
+.backdrop-mobile.is-open {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
