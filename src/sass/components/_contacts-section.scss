@@ -196,9 +196,10 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
     
-    color: var(--alternative-text-color);
 
     padding-top: 24px;
+    
+
     
     @media (min-width: 768px) {
         font-size: 14px;
@@ -213,6 +214,16 @@
         padding-top: 32px;
     }
 }
+
+.adress-link {
+        color: var(--alternative-text-color);
+    @include buttons(color);
+        &:hover,
+        &:focus {
+            color: var(--accent-text-color);
+        }
+}
+
 
 
 // .contacts__buttoms {
