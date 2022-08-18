@@ -1,0 +1,44 @@
+#button {
+  display: inline-block;
+  background-color: var(--accent-text-color);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: "\f102";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: rgb(255, 255, 255);
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  transform: scale(1.3);
+}
+
+#button:hover::after {
+  color: var(--accent-text-color);
+}
+
+#button:active {
+  background-color: transparent;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}/*# sourceMappingURL=btn-up.css.map */
