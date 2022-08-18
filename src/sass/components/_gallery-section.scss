@@ -96,6 +96,30 @@
   }
 }
 
+// .gallery-img:hover {
+//   border-radius: 10px;
+//   outline: 10px solid;
+//   outline-offset: 2px;
+//   animation: color-change 2s infinite;
+
+//   @keyframes color-change {
+//     0% {
+//       color: white;
+//     }
+
+//     50% {
+//       color: blue;
+//     }
+
+//     100% {
+//       color: yellow;
+//     }
+//   }
+
+
+
+// }
+
 @media screen and (min-width: 768px) {
   .gallery.section {
     padding-top: 60px;
